@@ -1,0 +1,64 @@
+import Image from "next/image";
+import Image1 from "@/assets/client_1.jpg";
+import Image2 from "@/assets/client_2.jpg";
+import Image3 from "@/assets/client_3.jpg";
+import Image4 from "@/assets/client_4.jpg";
+import Image5 from "@/assets/client_5.jpg";
+import Avatar from "@/assets/tes1.jpg";
+
+export default function ClientTestimonial() {
+  return (
+    <div className="h-[676px] bg-[#FBFBFB]">
+      <section className="w-full py-20">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold tracking-wide text-[#414141]">
+            CLIENT & <span className="text-[#FFBC13]">TESTIMONIAL</span>
+          </h2>
+          <div className="w-20 h-1 bg-[#FFBC13] mx-auto my-4"></div>
+          <p className="text-gray-500 max-w-2xl mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
+            lectus quis dui euismod con placerat massa nec elit egestas
+            efficitur.
+          </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-4">
+          <div className="bg-gray-100 p-8 rounded-lg shadow-sm">
+            <p className="text-gray-600 leading-relaxed">
+              Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue
+              reformidans atomorum his id, pri te hinc expetenda. Est an mundi
+              tollit iuvaret. An ius postulant reformidans. Vel an elit ludus
+              fabellas, ex quando adipisci accommodare usuet verar noluisse eum
+              diam.
+            </p>
+            <div className="flex items-center gap-4 mt-6">
+              <div className="w-14 h-14 rounded-full overflow-hidden">
+                <Image src={Avatar} alt="Profile" width={56} height={56} />
+              </div>
+              <div className="text-left">
+                <p className="font-semibold text-black">JOHN WATSON</p>
+                <p className="text-sm text-gray-500">CEO At Facebook</p>
+              </div>
+              <span className="text-[#FFBC13] text-4xl ml-auto">&#10078;</span>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 gap-2">
+            {[Image1, Image2, Image3, Image4, Image5, Image3].map((logo, i) => (
+              <div
+                key={i}
+                className="flex items-center justify-center bg-gray-100 rounded-lg shadow-sm"
+              >
+                <Image
+                  src={logo}
+                  alt={`Client ${i + 1}`}
+                  width={140}
+                  height={60}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
