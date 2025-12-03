@@ -33,7 +33,7 @@ export default function WhyChoose() {
     },
   ];
 
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
     <section className="pt-20 bg-white">
