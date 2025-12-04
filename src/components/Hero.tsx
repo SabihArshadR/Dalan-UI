@@ -34,7 +34,7 @@ export default function Hero() {
       <section className="relative h-[80vh] flex items-center overflow-hidden">
         <div
           key={`current-${currentSlide}`}
-          className={`absolute inset-0 bg-cover bg-center transition-transform duration-1000 ${
+          className={`absolute inset-0  transition-transform duration-1000 object-[50%_24%]  ${
             isTransitioning ? "-translate-x-full" : "translate-x-0"
           }`}
           style={{ backgroundImage: `url('${slides[currentSlide]}')` }}
@@ -73,7 +73,7 @@ export default function Hero() {
         `}</style>
 
         <div 
-          className={`absolute text-white lg:right-[400px] lg:top-[300px] transition-all duration-300 ${animateText ? 'opacity-100' : 'opacity-0'}`}
+          className={`absolute text-white lg:right-[280px] lg:top-[300px] transition-all duration-300 ${animateText ? 'opacity-100' : 'opacity-0'}`}
           style={{
             transition: 'opacity 0.3s ease-out'
           }}
@@ -100,11 +100,11 @@ export default function Hero() {
       </section>
       <div>
         <section className="bg-[#FFBC13]">
-          <div className="py-14 flex justify-between flex-row items-center lg:ml-[300px] lg:mr-[520px] mx-5">
-            <h2 className="text-[#333333] tracking-[6px] font-extralight text-[24px] uppercase">
+          <div className="h-[158px] flex justify-between flex-row items-center lg:ml-[300px] lg:mr-[520px] mx-5 font-montserrat">
+            <h2 className="text-[#333333] tracking-[6px] font-e text-[25px] uppercase">
               WE’RE READY TO WORK WITH YOU
             </h2>
-            <button className="mt-6 bg-white text-black px-10 py-3 tracking-wider font-semibold hover:bg-black hover:text-white transition">
+            <button className=" bg-white text-black px-10 py-3 text-[16px] tracking-wider font-semibold hover:bg-black hover:text-white transition">
               GET A QUOTE
             </button>
           </div>

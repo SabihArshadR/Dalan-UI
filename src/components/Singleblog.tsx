@@ -16,36 +16,29 @@ export default function CommentSection() {
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-4 gap-10">
         
-        {/* LEFT COMMENTS SECTION */}
         <div className="lg:col-span-3">
           
-          {/* NAVIGATION (Prev / Grid / Next) */}
           <div className="flex justify-between items-center text-sm text-gray-500 mb-10">
             <span className="cursor-pointer">&lt; PREV POST</span>
 
             <div className="flex justify-center">
               <div className="w-8 h-8 grid grid-cols-3 grid-rows-3 gap-[2px] cursor-pointer">
                 {[...Array(9)].map((_, i) => (
-                  <span key={i} className="bg-yellow-500"></span>
+                  <span key={i} className="bg-[#FFBC13]"></span>
                 ))}
               </div>
             </div>
 
             <span className="cursor-pointer">NEXT POST &gt;</span>
           </div>
-
-          {/* TITLE */}
-          <h2 className="text-center font-semibold tracking-wide text-lg mb-10">
+          <h2 className="text-center font-semibold tracking-wide text-black text-lg mb-10">
             COMMENTS ON THIS POST
           </h2>
-
-          {/* COMMENT BOXES */}
           {[1, 2].map((_, index) => (
             <div
               key={index}
               className="border border-gray-200 p-10 mb-10 text-center"
             >
-              {/* Avatar */}
               <div className="flex justify-center mb-4">
                 <div className="relative h-20 w-20">
                   <Image
@@ -71,13 +64,11 @@ export default function CommentSection() {
                 pellentesque, praesent fringilla sit amet in suspendisse.
               </p>
 
-              <button className="mt-5 bg-yellow-500 text-white px-4 py-1 text-xs uppercase">
+              <button className="mt-5 bg-[#FFBC13] text-white px-4 py-1 text-xs uppercase">
                 Reply
               </button>
             </div>
           ))}
-
-          {/* COMMENT FORM */}
           <form className="mt-10">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-5 mb-5">
               <input
@@ -105,18 +96,14 @@ export default function CommentSection() {
               className="border w-full px-3 py-2 text-sm outline-none"
             ></textarea>
 
-            <button className="mt-6 bg-yellow-500 text-white px-6 py-2 text-sm uppercase">
+            <button className="mt-6 bg-[#FFBC13] text-white px-6 py-2 text-sm uppercase">
               Submit
             </button>
           </form>
         </div>
-
-        {/* SIDEBAR */}
-        <aside className="space-y-10">
-
-          {/* INSTAGRAM */}
+        {/* <aside className="space-y-10">
           <div>
-            <h3 className="font-semibold mb-3">INSTAGRAM</h3>
+            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">INSTAGRAM</h3>
             <div className="grid grid-cols-3 gap-2">
               <div className="relative h-20">
                 <Image src="/insta1.jpg" alt="" fill className="object-cover" />
@@ -129,8 +116,6 @@ export default function CommentSection() {
               </div>
             </div>
           </div>
-
-          {/* TAGS */}
           <div>
             <h3 className="font-semibold mb-3">TOP TAGS</h3>
             <div className="flex flex-wrap gap-2">
@@ -147,7 +132,7 @@ export default function CommentSection() {
             </div>
           </div>
 
-        </aside>
+        </aside> */}
       </div>
     </div>
   );

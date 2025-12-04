@@ -1,35 +1,60 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Workers from "@/assets/choose.jpg";
 
 export default function WhyChoose() {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const imageRef = useRef<HTMLDivElement>(null);
+  const [isHovering, setIsHovering] = useState(false);
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    if (!imageRef.current) return;
+    
+    const rect = imageRef.current.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    
+    // Calculate percentage of mouse position relative to image
+    const xPercent = (x / rect.width - 0.5) * 2; // -1 to 1
+    const yPercent = (y / rect.height - 0.5) * 2; // -1 to 1
+    
+    setMousePosition({ x: xPercent * 10, y: yPercent * 5 }); // Adjust multiplier for movement intensity
+  };
+  
+  const handleMouseEnter = () => {
+    setIsHovering(true);
+  };
+  
+  const handleMouseLeave = () => {
+    setIsHovering(false);
+  };
   const items = [
     {
       title: "100% CUSTOMERS SUPPORT",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
     },
     {
       title: "HIGH QUALITY STANDARTS",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
     },
     {
       title: "WE HAVE REASONABLE PRICES",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
     },
     {
       title: "WE ARE RELIABLE COMPANY",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
     },
     {
       title: "HIGH QUALITY STANDARTS",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
+        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
     },
   ];
 
@@ -38,8 +63,8 @@ export default function WhyChoose() {
   return (
     <section className="pt-20 bg-white">
       <div className="text-center mb-10">
-        <h2 className="text-4xl font-bold tracking-wide text-[#414141]">
-          WHY <span className="text-yellow-500">CHOOSE</span>
+        <h2 className="text-[40px] font-montserrat font-bold tracking-wide text-[#414141]">
+          WHY <span className="text-[#FFBC13]">CHOOSE</span>
         </h2>
 
         <div className="flex justify-center mt-4">
@@ -49,33 +74,32 @@ export default function WhyChoose() {
           <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
         </div>
 
-        <p className="max-w-2xl mx-auto text-gray-500 mt-5">
+        <p className="max-w-[648px] text-sm font-roboto mx-auto text-[#6b6b6b] mt-5">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>
       </div>
 
-      <div className="container mx-auto grid lg:grid-cols-2 gap-10 px-4">
-        <div>
+      <div className="container mx-auto grid lg:grid-cols-2 gap-10 px-4 font-montserrat">
+        <div className="lg:w-[660px]">
           {items.map((item, index) => (
             <div key={index} className="border-b">
               <button
-                className={`w-full text-left px-4 py-3 flex items-center justify-between transition ${
+                className={`w-full text-left px-4 h-[44px] flex items-center transition text-[20px] font-extralight ${
                   openIndex === index
-                    ? "bg-[#FFBC13] text-white"
+                    ? "bg-[#FFBC13] text-white font-montserrat"
                     : "bg-[#F8F8F8] text-black"
                 }`}
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
               >
-                <span className="font-medium tracking-wide">{item.title}</span>
-
-                <span className="text-xl">
+                <span className="text-xl mr-5">
                   {openIndex === index ? "▼" : "▶"}
                 </span>
+                <span className="font-normal cursor-pointer tracking-[5px] ">{item.title}</span>
               </button>
 
               {openIndex === index && (
-                <div className="px-4 py-4 text-black text-sm">
+                <div className="px-4 py-8 text-[#333333] text-sm font-roboto">
                   {item.content}
                 </div>
               )}
@@ -83,7 +107,18 @@ export default function WhyChoose() {
           ))}
         </div>
 
-        <div className="flex justify-center">
+        <div 
+          ref={imageRef}
+          className="flex justify-center transition-transform duration-300 ease-out"
+          onMouseMove={handleMouseMove}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          style={{
+            transform: isHovering 
+              ? `translate(${mousePosition.x}px, ${mousePosition.y}px)`
+              : 'translate(0, 0)',
+          }}
+        >
           <Image
             src={Workers}
             alt="Workers"

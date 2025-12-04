@@ -14,76 +14,81 @@ import Logo from "@/assets/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#202020] text-[#BABABA] pt-20 pb-10 font-roboto">
-      <div className="max-w-[1400px] mx-auto px-6 grid lg:grid-cols-3  lg:gap-20 gap-14">
+    <footer className="bg-[#202020] text-[#BABABA] pt-20 pb-10 font-roboto lg:pl-[250px]">
+      <div className=" mx-auto px-6 lg:flex lg:grid-cols-2  lg:gap- gap-14">
         <div>
           <div className="flex items-center space-x-3 mb-4">
             <div className="-ml-1">
               <Image src={Logo} alt="logo" />
             </div>
           </div>
-          <p className="text-[#BABABA] text-sm leading-6">
-            Loren ipsum dolor consectetur adipiscing elit sed do eiusmod tempor
-            incididunt know you labore et dolore magna aliqua consectetur
-            adipiscing. Loren ipsum dolor consectetur adipiscing elit sed do
-            eiusmod tempor incididunt.
-          </p>
-          <div className="flex space-x-5 text-[#BABABA] text-lg mt-6">
-            <FaFacebookF className="hover:text-white cursor-pointer" />
-            <FaTwitter className="hover:text-white cursor-pointer" />
-            <FaBehance className="hover:text-white cursor-pointer" />
+          <div className="flex gap-5">
+            <div className="flex flex-col space-y-3 text-[#BABABA] text-lg mt-6">
+              <FaFacebookF className="hover:text-white cursor-pointer w-[8px] h-[15px]" />
+              <FaTwitter className="hover:text-white cursor-pointer w-[14px] h-[15px]" />
+              <FaBehance className="hover:text-white cursor-pointer w-[17px] h-[15px]" />
+            </div>
+            <div>
+              <p className="text-[#BABABA] max-w-[511px] text-sm leading-6 mt-5">
+                Loren ipsum dolor consectetur adipiscing elit sed do eiusmod
+                tempor incididunt know you labore et dolore magna aliqua
+                consectetur adipiscing. Loren ipsum dolor consectetur adipiscing
+                elit sed do eiusmod tempor incididunt.
+              </p>
+            </div>
           </div>
         </div>
+        <div className="lg:flex lg:ml-14">
+          <div>
+            <h3 className="text-white tracking-wider text-[22px] mb-6">
+              LATEST POST
+            </h3>
 
-        <div>
-          <h3 className="text-white tracking-wider text-[22px] mb-6">
-            LATEST POST
-          </h3>
+            <ul className="space-y-4 text-[#BABABA] text-sm">
+              <li>
+                Loren ipsum dolor consectetur elito
+                <div className="border-b border-dashed border-[#454545] mt-2" />
+              </li>
 
-          <ul className="space-y-4 text-[#BABABA] text-sm">
-            <li>
-              Loren ipsum dolor consectetur elito
-              <div className="border-b border-[#2F2929] mt-2" />
-            </li>
+              <li>
+                Loren ipsum dolor consectetur elito
+                <div className="border-b border-dashed border-[#454545] mt-2" />
+              </li>
 
-            <li>
-              Loren ipsum dolor consectetur elito
-              <div className="border-b border-[#2F2929] mt-2" />
-            </li>
+              <li>Loren ipsum dolor consectetur elito</li>
+            </ul>
+          </div>
+          <div className="lg:ml-10">
+            <h3 className="text-white tracking-wider text-[22px] mb-6">
+              CONTACT INFO
+            </h3>
 
-            <li>Loren ipsum dolor consectetur elito</li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-white tracking-wider text-[22px] mb-6">
-            CONTACT INFO
-          </h3>
+            <ul className="space-y-5 text-[#BABABA] text-[15px]">
+              <li className="flex items-center space-x-3">
+                <FaPhoneAlt className="" />
+                <span>Call Us 0 (245) 378-6748</span>
+              </li>
 
-          <ul className="space-y-5 text-[#BABABA] text-[15px]">
-            <li className="flex items-center space-x-3">
-              <FaPhoneAlt className="" />
-              <span>Call Us 0 (245) 378-6748</span>
-            </li>
+              <li className="flex items-center space-x-3">
+                <FaEnvelope className="" />
+                <span>info@mail.com</span>
+              </li>
 
-            <li className="flex items-center space-x-3">
-              <FaEnvelope className="" />
-              <span>info@mail.com</span>
-            </li>
+              <li className="flex items-center space-x-3">
+                <FaMapMarkerAlt className="" />
+                <span>California, USA</span>
+              </li>
 
-            <li className="flex items-center space-x-3">
-              <FaMapMarkerAlt className="" />
-              <span>California, USA</span>
-            </li>
-
-            <li className="flex items-center space-x-3">
-              <FaClock className="" />
-              <span>Monday - Friday 9am - 6 pm</span>
-            </li>
-          </ul>
+              <li className="flex items-center space-x-3">
+                <FaClock className="" />
+                <span>Monday - Friday 9am - 6 pm</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto mt-16 border-t border-[#2F2929]"></div>
+      <div className="max-w-[1400px] mx-auto mt-16 border-t  border-[#2F2929]"></div>
 
       <div className="max-w-[1400px] mx-auto px-6 mt-8 flex items-center justify-between text-sm">
         <p className="text-[#BABABA] text-[13px]">

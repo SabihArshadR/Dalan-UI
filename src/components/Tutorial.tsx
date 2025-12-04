@@ -11,7 +11,7 @@ const Tutorial = () => {
 
                   <FaCirclePlay className="w-[60px] h-[60px] text-[#FFBC13]"/>
                   </div>
-                  <h2 className="text-[33px] font-bold tracking-widest mt-5">
+                  <h2 className="text-[33px] font-montserrat font-bold tracking-widest mt-5">
                     WATCH OUR VIDEO TUTORIAL
                   </h2>
                   

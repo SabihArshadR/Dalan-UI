@@ -10,20 +10,20 @@ const Welcome = () => {
           <Image src={Image1} alt="About" />
         </div>
         <div className="">
-          <h1 className="text-[40px] font-bold text-black mx-2">
+          <h1 className="text-[40px] font-montserrat lg:tracking-[5px] leading-[1.2] font-bold text-black mx-2">
             <span className="text-[#414141]">WELCOME TO</span>
             <span className="text-[#FFBC13]">
               {""} DALAN <br></br> CONSTRUCTION
             </span>
           </h1>
-          <p className="max-w-2xl text-center text-sm mt-4 text-[#545353] mx-2">
+          <p className="max-w-[636px] text-sm mt-4 text-[#545353] mx-2 font-roboto leading-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
             eiusmod incididunt ametfh consectetur dolore magna aliqua. Ut enim
             ad minim veniam dolor sit amet magnaelit ate consectetur adipisicing
             elit sed do eiusmod tempor incididunt consectetur dolore magna
             aliqua. Ut enim ad minim veniam dolor sit amet consectetur
             adipisicing elit sed do eiusmo tempor incididunt consectetur dolore
-            magna aliqua. Ut enim ad Lorem ipsum dolor sit amet consectetur
+            magna aliqua. Ut enim ad <br></br> Lorem ipsum dolor sit amet consectetur
             adipisicing elit sed do eiusmod adipisicing temporert incididunt
             adipisicing consectetur dolore magna aliqua. Ut enim ad minim veniam
             dolore aliq. enim ad minim veniam dolor sit amet consectetur

@@ -46,11 +46,11 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#FBFBFB]">
       <div className="container mx-auto px-6 text-center">
-        <h2 className="text-4xl tracking-wider mb-4">
-          <span className="text-gray-700 font-semibold">OUR </span>
-          <span className="text-[#FFBC13] font-semibold">SERVICES</span>
+        <h2 className="text-[40px] font-montserrat font-bold tracking-wider mb-4">
+          <span className="text-gray-700">OUR </span>
+          <span className="text-[#FFBC13]">SERVICES</span>
         </h2>
         <div className="flex justify-center mt-4">
           <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
@@ -58,23 +58,27 @@ export default function Services() {
         <div className="flex justify-center mt-1.5">
           <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
         </div>
-        <p className="text-gray-500 max-w-2xl mx-auto mb-16 mt-5">
+        <p className="text-[#6b6b6b] max-w-[648px] mx-auto mb-16 mt-5 text-sm font-roboto">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 font-roboto ">
           {services.map((service) => (
             <div
               key={service.title}
-              className="flex items-start gap-6 text-left"
+              className="flex items-start gap-6 text-left text-[#FFBC13] group "
             >
-              <div className="bg-[#FFBC13] w-[124px] h-[64px] flex items-center justify-center text-white text-3xl">
+              <div
+                className="bg-[#FFBC13] w-[66px] h-[64px] px-4 flex items-center justify-center
+               text-white text-3xl rounded transition-all duration-500 
+               group-hover:rotate-[360deg]"
+              >
                 {service.icon}
               </div>
 
               <div>
-                <h3 className="text-lg tracking-wider font-semibold mb-2 text-gray-800">
+                <h3 className="text-lg tracking-wider font-semibold mb-2 text-gray-800 group-hover:text-[#FFBC13]">
                   {service.title}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">

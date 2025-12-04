@@ -11,7 +11,7 @@ export default function ClientTestimonial() {
     <div className="lg:h-[676px] bg-[#FBFBFB]">
       <section className="w-full py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold tracking-wide text-[#414141]">
+          <h2 className="text-[40px] font-bold tracking-[5px] text-[#414141] font-montserrat">
             CLIENT & <span className="text-[#FFBC13]">TESTIMONIAL</span>
           </h2>
           <div className="flex justify-center mt-4">
@@ -20,15 +20,15 @@ export default function ClientTestimonial() {
       <div className="flex justify-center mt-1.5">
         <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
       </div>
-          <p className="text-gray-500 max-w-2xl mx-auto mt-5">
+          <p className="text-[#6b6b6b] font-roboto text-sm max-w-[648px] mx-auto mt-5">
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
             lectus quis dui euismod con placerat massa nec elit egestas
             efficitur.
           </p>
         </div>
 
-        <div className="lg:max-w-5xl lg:mx-auto lg:mt-16 grid lg:grid-cols-2 gap-10 items-center px-4">
-          <div className="bg-gray-100 p-8 rounded-lg shadow-sm">
+        <div className="lg:max-w-[1320px] lg:mx-auto lg:mt-16 grid lg:grid-cols-2 gap-10 items-center px-4">
+          <div className="bg-[#f2f2f2] p-8 rounded-lg shadow-sm">
             <p className="text-gray-600 leading-relaxed">
               Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue
               reformidans atomorum his id, pri te hinc expetenda. Est an mundi
@@ -51,7 +51,7 @@ export default function ClientTestimonial() {
             {[Image1, Image2, Image3, Image4, Image5, Image3].map((logo, i) => (
               <div
                 key={i}
-                className="flex items-center justify-center bg-gray-100 rounded-lg shadow-sm"
+                className="flex items-center justify-center bg-[#f2f2f2] shadow-sm lg:w-[202px] lg:h-[145px]"
               >
                 <Image
                   src={logo}

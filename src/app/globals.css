@@ -12,6 +12,7 @@
   --font-mono: var(--font-geist-mono);
   --font-montserrat: var(--font-montserrat);
   --font-roboto: var(--font-roboto);
+  --font-roboto_condensed: var(--font-roboto_condensed);
 }
 
 @media (prefers-color-scheme: dark) {
