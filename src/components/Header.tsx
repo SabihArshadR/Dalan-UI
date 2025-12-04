@@ -64,7 +64,7 @@ export default function Header() {
 
           {/* NAV LINKS */}
           <nav className="hidden md:flex items-center space-x-10 text-white text-[14px] font-semibold">
-            <a className="text-[#FFBC14] cursor-pointer lg:ml-20">HOME</a>
+            <a className="text-[#FFBC14] cursor-pointer lg:ml-20" onClick={()=>router.push("/")}>HOME</a>
             <a className="hover:text-[#FFBC14] cursor-pointer">E-SHOP</a>
             {/* <a className="hover:text-[#FFBC14] cursor-pointer">PAGES</a> */}
             <div
@@ -81,19 +81,19 @@ export default function Header() {
                   ${pagesOpen ? "max-h-60 opacity-100" : "max-h-0 opacity-0"}
                 `}
               >
-                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black">
+                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black" onClick={()=>router.push("/blogpage")}>
                   Blog Page
                 </a>
-                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black">
+                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black" onClick={()=>router.push("/gallery")}>
                   Gallery
                 </a>
-                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black">
+                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black" onClick={()=>router.push("/gallery")}>
                   Single Gallery
                 </a>
-                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black">
+                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black" onClick={()=>router.push("/services")}>
                   Services
                 </a>
-                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black" >
+                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black" onClick={()=>router.push("/about")}>
                   About Page
                 </a>
               </div>
@@ -114,10 +114,10 @@ export default function Header() {
                   ${blogOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}
                 `}
               >
-                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black">
+                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black" onClick={()=>router.push("/blogpage")}>
                   Blog Page
                 </a>
-                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black">
+                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black" onClick={()=>router.push("/singleblog")}>
                   Single Page
                 </a>
               </div>
