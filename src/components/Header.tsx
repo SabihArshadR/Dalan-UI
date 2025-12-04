@@ -66,7 +66,7 @@ export default function Header() {
           <div className="flex items-center space-x-3 z-10">
             <div className="-ml-1"></div>
           </div>
-          <nav className="hidden md:flex items-center space-x-10 text-white text-[14px] font-semibold">
+          <nav className="hidden md:flex items-center space-x-10 text-white text-[13px] font-semibold">
             <a
               className="text-[#FFBC14] cursor-pointer lg:ml-20"
               onClick={() => router.push("/")}

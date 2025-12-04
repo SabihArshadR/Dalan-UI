@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import work1 from "@/assets/work-1.jpg";
@@ -18,7 +18,13 @@ type WorkItem = {
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState("All Works");
-  const categories = ["All Works", "Garden", "Building", "Construction", "Interior"];
+  const categories = [
+    "All Works",
+    "Garden",
+    "Building",
+    "Construction",
+    "Interior",
+  ];
 
   const works: WorkItem[] = [
     { id: 1, image: work1, category: "Interior" },
@@ -29,11 +35,20 @@ export default function Gallery() {
     { id: 6, image: work6, category: "Building" },
     { id: 7, image: work7, category: "Building" },
     { id: 8, image: work8, category: "Construction" },
+    { id: 9, image: work5, category: "Building" },
+    { id: 10, image: work6, category: "Building" },
+    { id: 11, image: work1, category: "Building" },
+    { id: 12, image: work8, category: "Construction" },
+
+
+
+
   ];
 
-  const filteredWorks = activeCategory === "All Works" 
-    ? works 
-    : works.filter(work => work.category === activeCategory);
+  const filteredWorks =
+    activeCategory === "All Works"
+      ? works
+      : works.filter((work) => work.category === activeCategory);
 
   return (
     <section className="py-24 bg-white text-center">
@@ -61,7 +76,7 @@ export default function Gallery() {
               ${
                 activeCategory === category
                   ? "bg-[#FFBC13] text-white"
-                  : "border-[#FFBC13] text-[#383838] hover:bg-[#FFF5D6]"
+                  : "border-[#FFBC13] text-[#383838]"
               }`}
           >
             <span className="text-xs">■</span> {category}

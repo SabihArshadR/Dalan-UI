@@ -5,7 +5,7 @@ export default function Contact() {
     <div>
       <div className="relative h-[600px]">
         <div className="absolute inset-0 bg-[url('/slider2.jpg')] object-cover object-[50%_40%] transform scale-x-[-1]"></div>
-        <div className="absolute top-1/2 lg:left-[200px]">
+        <div className="absolute lg:top-[350px] lg:left-[300px]">
           <p className="text-sm font-roboto font-bold tracking-[5px]">
             <span className="text-[#605B5B]">Home </span>
             <span className="text-[#6E6E6E]">/ Contact</span>
@@ -37,21 +37,21 @@ export default function Contact() {
           <form className="mt-12 text-left">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div>
-                <label className="text-sm text-gray-600">Name</label>
+                <label className="text-[15px] text-[#757575]">Name</label>
                 <input
                   type="text"
                   className="w-full border-b border-gray-400 p-1 focus:outline-none"
                 />
               </div>
               <div>
-                <label className="text-sm text-gray-600">Email</label>
+                <label className="text-[15px] text-[#757575]">Email</label>
                 <input
                   type="email"
                   className="w-full border-b border-gray-400 p-1 focus:outline-none"
                 />
               </div>
               <div>
-                <label className="text-sm text-gray-600">Subject</label>
+                <label className="text-[15px] text-[#757575]">Subject</label>
                 <input
                   type="text"
                   className="w-full border-b border-gray-400 p-1 focus:outline-none"
@@ -59,13 +59,13 @@ export default function Contact() {
               </div>
             </div>
             <div className="mt-10">
-              <label className="text-sm text-gray-600">Your Message</label>
+              <label className="text-[15px] text-[#757575]">Your Message</label>
               <textarea className="w-full border-b border-gray-400 p-2 resize-none focus:outline-none"></textarea>
             </div>
             <div className="mt-10">
               <button
                 type="submit"
-                className="bg-[#FFBC13] text-white font-semibold px-10 py-3 tracking-wide hover:bg-black transition cursor-pointer"
+                className="bg-[#FFBC13] text-white font-semibold px-10 text-[15px] tracking-widest font-roboto py-3 tracking-wide hover:bg-black transition cursor-pointer"
               >
                 SEND MESSAGE
               </button>

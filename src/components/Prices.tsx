@@ -9,7 +9,7 @@ export default function Prices() {
         <div className="w-25 h-0.5 bg-[#FFBC13] mx-auto mt-5"></div>
         <div className="w-10 h-0.5 bg-[#FFBC13] mx-auto mt-2"></div>
 
-        <p className="text-[#6B6B6B] w-[648px] mx-auto text-sm mt-5">
+        <p className="text-[#6B6B6B] max-w-[648px] mx-auto text-sm mt-5">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>

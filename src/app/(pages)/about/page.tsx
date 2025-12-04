@@ -8,7 +8,21 @@ const page = () => {
   return (
     <div>
       <Header />
-      <div className="mt-[100px]">
+      <div>
+        <div className="relative h-[600px] font-roboto">
+          <div className="absolute inset-0 bg-[url('/slider2.jpg')] transform scale-x-[-1]"></div>
+          <div className="absolute lg:top-[400px] lg:left-[300px] transform -translate-y-1/2">
+            <p className="text-[14px] tracking-[5px] font-bold">
+              <span className="text-[#605B5B]">Home </span>
+              <span className="text-[#6E6E6E]">/ About</span>
+            </p>
+            <h1 className="text-[45px] text-[#333333] font-medium lg:tracking-[4px]">
+              ABOUT US
+            </h1>
+          </div>
+        </div>
+      </div>
+      <div className="">
         <Welcome />
       </div>
       <TeamMember />

@@ -16,11 +16,10 @@ export default function WhyChoose() {
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     
-    // Calculate percentage of mouse position relative to image
-    const xPercent = (x / rect.width - 0.5) * 2; // -1 to 1
-    const yPercent = (y / rect.height - 0.5) * 2; // -1 to 1
+    const xPercent = (x / rect.width - 0.5) * 2; 
+    const yPercent = (y / rect.height - 0.5) * 2;
     
-    setMousePosition({ x: xPercent * 10, y: yPercent * 5 }); // Adjust multiplier for movement intensity
+    setMousePosition({ x: xPercent * 10, y: yPercent * 5 });
   };
   
   const handleMouseEnter = () => {
@@ -74,18 +73,18 @@ export default function WhyChoose() {
           <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
         </div>
 
-        <p className="max-w-[648px] text-sm font-roboto mx-auto text-[#6b6b6b] mt-5">
+        <p className="lg:max-w-[648px] text-sm font-roboto mx-auto text-[#6b6b6b] mt-5">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>
       </div>
 
       <div className="container mx-auto grid lg:grid-cols-2 gap-10 px-4 font-montserrat">
-        <div className="lg:w-[660px]">
+        <div className="lg:max-w-[660px]">
           {items.map((item, index) => (
             <div key={index} className="border-b">
               <button
-                className={`w-full text-left px-4 h-[44px] flex items-center transition text-[20px] font-extralight ${
+                className={`w-full text-left lg:px-4 h-[44px] flex items-center transition text-[20px] font-extralight ${
                   openIndex === index
                     ? "bg-[#FFBC13] text-white font-montserrat"
                     : "bg-[#F8F8F8] text-black"
@@ -95,7 +94,7 @@ export default function WhyChoose() {
                 <span className="text-xl mr-5">
                   {openIndex === index ? "▼" : "▶"}
                 </span>
-                <span className="font-normal cursor-pointer tracking-[5px] ">{item.title}</span>
+                <span className="font-normal cursor-pointer lg:tracking-[5px] ">{item.title}</span>
               </button>
 
               {openIndex === index && (

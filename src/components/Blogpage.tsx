@@ -13,8 +13,21 @@ export default function BlogPage() {
   const [search, setSearch] = useState("");
 
   return (
-    <section className="py-16 bg-white mt-20">
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-4 gap-10">
+    <section className="bg-white pb-20">
+      <div className="relative h-[600px] font-roboto">
+        <div className="absolute inset-0 bg-[url('/slider2.jpg')] transform scale-x-[-1]"></div>
+        <div className="absolute lg:top-[400px] lg:left-[300px] transform -translate-y-1/2">
+          <p className="text-[14px] tracking-[5px] font-bold">
+            <span className="text-[#605B5B]">Home </span>
+            <span className="text-[#6E6E6E]">/ BLOG</span>
+          </p>
+          <h1 className="text-[45px] text-[#333333] font-medium lg:tracking-[4px]">
+            LATEST NEWS
+          </h1>
+        </div>
+      </div>
+
+      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-4 gap-10 mt-20">
         <div className="lg:col-span-3 space-y-16">
           <article>
             <div className="relative h-[350px] w-full">
@@ -113,37 +126,54 @@ export default function BlogPage() {
             />
           </div>
           <div>
-            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">POST CATEGORIES</h3>
-            <ul className="space-y-2 text-gray-600 text-sm">
+            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">
+              POST CATEGORIES
+            </h3>
+            <ul className="space-y-2 text-[15px] font-roboto text-[#6f6f6f] ">
               <li>Windows</li>
+              <div className="w-full border-b border-[#e1e1e1]"></div>
               <li>Laptop</li>
+              <div className="w-full border-b border-[#e1e1e1]"></div>
               <li>Envato</li>
+              <div className="w-full border-b border-[#e1e1e1]"></div>
               <li>Website</li>
+              <div className="w-full border-b border-[#e1e1e1]"></div>
               <li>Development</li>
+              <div className="w-full border-b border-[#e1e1e1]"></div>
             </ul>
           </div>
           <div>
-            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">RECENT POST</h3>
-            <ul className="text-sm text-gray-700 space-y-3">
+            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">
+              RECENT POST
+            </h3>
+            <ul className="text-sm text-[#333333] space-y-3 font-roboto tracking-[2px] font-extralight">
               <li>
                 <strong>THIS IS LATEST PIC</strong>
                 <br />
-                <span className="text-gray-500 text-xs">25th Dec 2015</span>
+                <span className="text-[#8b8b8b] text-[13px] font-normal">
+                  25th Dec 2015
+                </span>
               </li>
               <li>
                 <strong>THIS IS VIDEO</strong>
                 <br />
-                <span className="text-gray-500 text-xs">25th Dec 2015</span>
+                <span className="text-[#8b8b8b] text-[13px] font-normal">
+                  25th Dec 2015
+                </span>
               </li>
               <li>
                 <strong>GRAPHIC DESIGN</strong>
                 <br />
-                <span className="text-gray-500 text-xs">25th Dec 2015</span>
+                <span className="text-[#8b8b8b] text-[13px] font-normal">
+                  25th Dec 2015
+                </span>
               </li>
             </ul>
           </div>
           <div>
-            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">INSTAGRAM</h3>
+            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">
+              INSTAGRAM
+            </h3>
 
             <div className="flex gap-2">
               <div>

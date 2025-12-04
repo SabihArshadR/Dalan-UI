@@ -14,7 +14,7 @@ export default function Hero() {
 
   useEffect(() => {
     setAnimateText(true);
-    
+
     const interval = setInterval(() => {
       setAnimateText(false);
       setIsTransitioning(true);
@@ -31,10 +31,10 @@ export default function Hero() {
   }, [currentSlide, totalSlides]);
   return (
     <div>
-      <section className="relative h-[80vh] flex items-center overflow-hidden">
+      <section className="relative h-[750px] flex items-center overflow-hidden">
         <div
           key={`current-${currentSlide}`}
-          className={`absolute inset-0  transition-transform duration-1000 object-[50%_24%]  ${
+          className={`absolute inset-0  transition-transform duration-1000 ${
             isTransitioning ? "-translate-x-full" : "translate-x-0"
           }`}
           style={{ backgroundImage: `url('${slides[currentSlide]}')` }}
@@ -42,7 +42,7 @@ export default function Hero() {
         {isTransitioning && (
           <div
             key={`next-${nextSlide}`}
-            className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 translate-x-0"
+            className="absolute inset-0 transition-transform duration-1000 translate-x-0"
             style={{
               backgroundImage: `url('${slides[nextSlide]}')`,
               transform: "translateX(100%)",
@@ -59,7 +59,7 @@ export default function Hero() {
               transform: translateX(0);
             }
           }
-          
+
           @keyframes fadeInUp {
             from {
               opacity: 0;
@@ -72,13 +72,17 @@ export default function Hero() {
           }
         `}</style>
 
-        <div 
-          className={`absolute text-white lg:right-[280px] lg:top-[300px] transition-all duration-300 ${animateText ? 'opacity-100' : 'opacity-0'}`}
+        <div
+          className={`absolute text-white lg:right-[280px] lg:top-[300px] transition-all duration-300 ${
+            animateText ? "opacity-100" : "opacity-0"
+          }`}
           style={{
-            transition: 'opacity 0.3s ease-out'
+            transition: "opacity 0.3s ease-out",
           }}
         >
-          <h1 className="text-[24px] font-bold font-roboto tracking-widest">DALAN CONSTRUCTION</h1>
+          <h1 className="text-[24px] font-bold font-roboto tracking-widest">
+            DALAN CONSTRUCTION
+          </h1>
           <h1 className="text-[44px] font-bold font-montserrat">
             <span className="text-[#2F3320]">BUILD</span>{" "}
             <span className="text-[#FFBC13]">EVERYTHING</span>
