@@ -8,19 +8,24 @@ export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [nextSlide, setNextSlide] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
+  const [animateText, setAnimateText] = useState(false);
   const slides = ["/slider1.jpg", "/slider2.jpg"];
   const totalSlides = slides.length;
 
   useEffect(() => {
+    setAnimateText(true);
+    
     const interval = setInterval(() => {
+      setAnimateText(false);
       setIsTransitioning(true);
       setNextSlide((prevNext) => (currentSlide + 1) % totalSlides);
 
       setTimeout(() => {
         setCurrentSlide((prev) => (prev + 1) % totalSlides);
         setIsTransitioning(false);
+        setAnimateText(true);
       }, 1000);
-    }, 3000);
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [currentSlide, totalSlides]);
@@ -54,24 +59,40 @@ export default function Hero() {
               transform: translateX(0);
             }
           }
+          
+          @keyframes fadeInUp {
+            from {
+              opacity: 0;
+              transform: translateY(20px);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
         `}</style>
 
-        <div className="absolute text-white right-[400px] top-[300px]">
-          <h1 className="text-[24px] font-bold">DALAN CONSTRUCTION</h1>
-          <h1 className="text-[44px] font-bold">
+        <div 
+          className={`absolute text-white lg:right-[400px] lg:top-[300px] transition-all duration-300 ${animateText ? 'opacity-100' : 'opacity-0'}`}
+          style={{
+            transition: 'opacity 0.3s ease-out'
+          }}
+        >
+          <h1 className="text-[24px] font-bold font-roboto tracking-widest">DALAN CONSTRUCTION</h1>
+          <h1 className="text-[44px] font-bold font-montserrat">
             <span className="text-[#2F3320]">BUILD</span>{" "}
             <span className="text-[#FFBC13]">EVERYTHING</span>
           </h1>
-          <p className="text-sm max-w-[636px]">
+          <p className="text-sm max-w-[636px] font-roboto">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
             nonmy ni euism laoreet dolore magna aliquam erat volutpat
             consectetuer adipiscing elit.
           </p>
           <div className="flex gap-5 mt-10">
-            <button className="px-8 py-3 bg-[#FFBC13] hover:bg-transparent border border-[#FFBC13] rounded shadow cursor-pointer">
+            <button className="px-8 py-3 bg-[#FFBC13] hover:bg-transparent border border-[#FFBC13] rounded shadow cursor-pointer font-roboto text-sm">
               READ MORE
             </button>
-            <button className="px-8 py-3 hover:bg-[#FFBC13] bg-transparent border border-[#FFBC13] rounded shadow cursor-pointer">
+            <button className="px-8 py-3 hover:bg-[#FFBC13] bg-transparent border border-[#FFBC13] rounded shadow cursor-pointer font-roboto text-sm">
               GET STARTED
             </button>
           </div>
@@ -79,11 +100,11 @@ export default function Hero() {
       </section>
       <div>
         <section className="bg-[#FFBC13]">
-          <div className="py-14 flex justify-between flex-row items-center ml-[300px] mr-[520px]">
+          <div className="py-14 flex justify-between flex-row items-center lg:ml-[300px] lg:mr-[520px] mx-5">
             <h2 className="text-[#333333] tracking-[6px] font-extralight text-[24px] uppercase">
               WE’RE READY TO WORK WITH YOU
             </h2>
-            <button className="mt-6 md:mt-0 bg-white text-black px-10 py-3 tracking-wider font-semibold hover:bg-black hover:text-white transition">
+            <button className="mt-6 bg-white text-black px-10 py-3 tracking-wider font-semibold hover:bg-black hover:text-white transition">
               GET A QUOTE
             </button>
           </div>

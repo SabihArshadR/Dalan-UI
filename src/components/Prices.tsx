@@ -15,7 +15,7 @@ export default function Prices() {
         </p>
       </div>
 
-      <div className="mt-16 grid grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
+      <div className="mt-16 grid lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
         {/* Box */}
         <div className="shadow-md bg-[#F6F6F6] py-12 px-10 text-center rounded-md">
           <h3 className="text-[#FFCD23] text-5xl">$ 40</h3>

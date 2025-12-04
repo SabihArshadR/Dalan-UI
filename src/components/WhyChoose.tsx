@@ -42,15 +42,20 @@ export default function WhyChoose() {
           WHY <span className="text-yellow-500">CHOOSE</span>
         </h2>
 
-        <div className="w-20 h-1 bg-[#FFBC13] mx-auto my-4" />
+        <div className="flex justify-center mt-4">
+          <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+        </div>
+        <div className="flex justify-center mt-1.5">
+          <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+        </div>
 
-        <p className="max-w-2xl mx-auto text-gray-500">
+        <p className="max-w-2xl mx-auto text-gray-500 mt-5">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>
       </div>
 
-      <div className="container mx-auto grid grid-cols-2 gap-10 px-4">
+      <div className="container mx-auto grid lg:grid-cols-2 gap-10 px-4">
         <div>
           {items.map((item, index) => (
             <div key={index} className="border-b">

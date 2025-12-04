@@ -23,8 +23,14 @@ export default function Gallery() {
         <span className="text-gray-700 font-semibold">OUR </span>
         <span className="text-yellow-500 font-semibold">GALLERY</span>
       </h2>
+      <div className="flex justify-center mt-4">
+        <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+      </div>
+      <div className="flex justify-center mt-1.5">
+        <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+      </div>
 
-      <p className="text-gray-500 max-w-2xl mx-auto mb-10">
+      <p className="text-gray-500 max-w-2xl mx-auto mb-10 mt-5">
         Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
         lectus quis dui euismod con placerat massa nec elit egestas efficitur.
       </p>
@@ -43,7 +49,7 @@ export default function Gallery() {
           </button>
         ))}
       </div>
-      <div className="grid grid-cols-4 gap-6 max-w-6xl mx-auto">
+      <div className="grid lg:grid-cols-4 gap-6 max-w-6xl lg:mx-auto mx-2">
         {Array.from({ length: 12 }).map((_, i) => {
           const images = [
             work1,

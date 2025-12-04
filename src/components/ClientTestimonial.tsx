@@ -8,21 +8,26 @@ import Avatar from "@/assets/tes1.jpg";
 
 export default function ClientTestimonial() {
   return (
-    <div className="h-[676px] bg-[#FBFBFB]">
+    <div className="lg:h-[676px] bg-[#FBFBFB]">
       <section className="w-full py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold tracking-wide text-[#414141]">
             CLIENT & <span className="text-[#FFBC13]">TESTIMONIAL</span>
           </h2>
-          <div className="w-20 h-1 bg-[#FFBC13] mx-auto my-4"></div>
-          <p className="text-gray-500 max-w-2xl mx-auto">
+          <div className="flex justify-center mt-4">
+        <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+      </div>
+      <div className="flex justify-center mt-1.5">
+        <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+      </div>
+          <p className="text-gray-500 max-w-2xl mx-auto mt-5">
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
             lectus quis dui euismod con placerat massa nec elit egestas
             efficitur.
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center px-4">
+        <div className="lg:max-w-5xl lg:mx-auto lg:mt-16 grid lg:grid-cols-2 gap-10 items-center px-4">
           <div className="bg-gray-100 p-8 rounded-lg shadow-sm">
             <p className="text-gray-600 leading-relaxed">
               Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue

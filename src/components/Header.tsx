@@ -14,16 +14,18 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import Logo from "@/assets/logoheader.png";
+import { useRouter } from "next/navigation";
 
 export default function Header() {
   const [open, setOpen] = useState(false);
 
   const [pagesOpen, setPagesOpen] = useState(false);
   const [blogOpen, setBlogOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <header className="fixed top-0 left-0 w-full z-50">
-      <div className="w-full bg-[#262424] text-gray-300 text-sm">
+      <div className="w-full bg-[#262424] text-gray-300 text-sm lg:block hidden">
         <div className="max-w-[1400px] mx-auto px-6 py-2 flex items-center justify-between">
           <div className="flex items-center space-x-4">
             <FaFacebookF className="hover:text-white cursor-pointer" />
@@ -50,7 +52,7 @@ export default function Header() {
           className="absolute left-0 top-0 bottom-0 w-[550px] bg-[#FFBC13]
     [clip-path:polygon(0_0,85%_0,100%_100%,0_100%)]"
         >
-          <div className="flex justify-end">
+          <div className="flex lg:justify-end">
             <Image src={Logo} alt="logo" className="mr-32" />
           </div>
         </div>
@@ -62,7 +64,7 @@ export default function Header() {
 
           {/* NAV LINKS */}
           <nav className="hidden md:flex items-center space-x-10 text-white text-[14px] font-semibold">
-            <a className="text-[#FFBC14] cursor-pointer">HOME</a>
+            <a className="text-[#FFBC14] cursor-pointer lg:ml-20">HOME</a>
             <a className="hover:text-[#FFBC14] cursor-pointer">E-SHOP</a>
             {/* <a className="hover:text-[#FFBC14] cursor-pointer">PAGES</a> */}
             <div
@@ -91,7 +93,7 @@ export default function Header() {
                 <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black">
                   Services
                 </a>
-                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black">
+                <a className="block px-4 py-2 hover:bg-[#FFBC14] hover:text-black" >
                   About Page
                 </a>
               </div>
@@ -121,8 +123,8 @@ export default function Header() {
               </div>
             </div>
 
-            <a className="hover:text-[#FFBC14] cursor-pointer">GALLERY</a>
-            <a className="hover:text-[#FFBC14] cursor-pointer">CONTACT</a>
+            <a className="hover:text-[#FFBC14] cursor-pointer"  onClick={()=>router.push("/gallery")}>GALLERY</a>
+            <a className="hover:text-[#FFBC14] cursor-pointer"  onClick={()=>router.push("/contact")}>CONTACT</a>
           </nav>
 
           <div className="hidden md:flex items-center space-x-6 text-white">
@@ -140,7 +142,7 @@ export default function Header() {
 
           <button
             onClick={() => setOpen(!open)}
-            className="md:hidden text-white text-2xl"
+            className="lg:hidden text-white text-2xl"
           >
             ☰
           </button>

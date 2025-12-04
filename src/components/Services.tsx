@@ -52,7 +52,13 @@ export default function Services() {
           <span className="text-gray-700 font-semibold">OUR </span>
           <span className="text-[#FFBC13] font-semibold">SERVICES</span>
         </h2>
-        <p className="text-gray-500 max-w-2xl mx-auto mb-16">
+        <div className="flex justify-center mt-4">
+          <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+        </div>
+        <div className="flex justify-center mt-1.5">
+          <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+        </div>
+        <p className="text-gray-500 max-w-2xl mx-auto mb-16 mt-5">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>

@@ -10,8 +10,11 @@ export default function TeamMember() {
         <h2 className="text-3xl md:text-4xl font-bold tracking-wide text-gray-800">
           TEAM <span className="text-[#FFBC13]">MEMBER</span>
         </h2>
-        <div className="flex justify-center my-3">
-          <div className="w-20 h-[3px] bg-[#FFBC13] rounded"></div>
+        <div className="flex justify-center mt-4">
+          <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+        </div>
+        <div className="flex justify-center mt-1.5">
+          <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
         </div>
         <p className="text-gray-600 max-w-2xl mx-auto mt-4">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id

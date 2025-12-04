@@ -9,11 +9,19 @@ export default function Projects() {
   return (
     <section className="py-20 bg-[#FBFBFB]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-12"><span className="text-[#414141]">WE</span> <span className="text-[#FFBC13]">OFFER</span> </h2>
-
-        <p className="text-center max-w-2xl mx-auto mb-12 text-[#6B6B6B]">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. 
-          Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.
+        <h2 className="text-3xl font-bold text-center">
+          <span className="text-[#414141]">WE</span>{" "}
+          <span className="text-[#FFBC13]">OFFER</span>{" "}
+        </h2>
+        <div className="flex justify-center mt-4">
+          <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+        </div>
+        <div className="flex justify-center mt-1.5">
+          <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+        </div>
+        <p className="text-center max-w-2xl mx-auto mb-12 text-[#6B6B6B] mt-5">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
+          lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
