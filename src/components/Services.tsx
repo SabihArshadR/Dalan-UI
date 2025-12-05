@@ -11,44 +11,58 @@ export default function Services() {
       title: "FLOORS & ROOFS",
       description:
         "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
-      icon: <FiMonitor />,
+      icon: <FiMonitor className="w-[66px] h-[64px]" />,
     },
     {
       title: "ROOMS & HALLS",
       description:
         "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
-      icon: <FaRegLightbulb />,
+      icon: <FaRegLightbulb className="w-[66px] h-[64px]" />,
     },
     {
       title: "BASEMENTS",
       description:
         "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
-      icon: <LuClock3 />,
+      icon: <LuClock3 className="w-[66px] h-[64px]" />,
     },
     {
       title: "CONSULTING",
       description:
         "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
-      icon: <BsCamera />,
+      icon: <BsCamera className="w-[66px] h-[64px]" />,
     },
     {
       title: "MODERN DESIGN",
       description:
         "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
-      icon: <CiLaptop />,
+      icon: <CiLaptop className="w-[66px] h-[64px]" />,
     },
     {
       title: "24 SERVICE",
       description:
         "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
-      icon: <FaReact />,
+      icon: <FaReact className="w-[66px] h-[64px]" />,
     },
   ];
 
   return (
-    <section className="py-24 bg-[#FBFBFB]">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-[40px] font-montserrat font-bold tracking-wider mb-4">
+    <section className="bg-[#FBFBFB]">
+      <div className="relative h-[600px] font-roboto">
+        <div className="absolute inset-0 bg-[url('/page_bg.jpg')]"
+        style={{backgroundPosition: "50% 40%"}}
+        ></div>
+        <div className="absolute top-[400px] lg:left-[300px] transform -translate-y-1/2">
+          <p className="text-[14px] tracking-[5px] font-bold">
+            <span className="text-[#605B5B]">Home </span>
+            <span className="text-[#6E6E6E]">/ Service</span>
+          </p>
+          <h1 className="text-[45px] text-[#333333] font-medium lg:tracking-[4px]">
+            OUR SERVICE
+          </h1>
+        </div>
+      </div>
+      <div className="container mx-auto max-w-[1320px] text-center p-2 mt-10">
+        <h2 className="text-[40px] font-montserrat font-bold tracking-[4px] mb-4">
           <span className="text-gray-700">OUR </span>
           <span className="text-[#FFBC13]">SERVICES</span>
         </h2>
@@ -58,7 +72,7 @@ export default function Services() {
         <div className="flex justify-center mt-1.5">
           <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
         </div>
-        <p className="text-[#6b6b6b] max-w-[648px] mx-auto mb-16 mt-5 text-sm font-roboto">
+        <p className="text-[#6b6b6b] max-w-[648px] mx-auto mb-16 mt-5 text-sm font-roboto leading-6">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>
@@ -71,17 +85,17 @@ export default function Services() {
             >
               <div
                 className="bg-[#FFBC13] w-[66px] h-[64px] px-4 flex items-center justify-center
-               text-white text-3xl rounded transition-all duration-500 
+               text-white text-3xl transition-all duration-500 
                group-hover:rotate-[360deg]"
               >
                 {service.icon}
               </div>
 
               <div>
-                <h3 className="text-lg tracking-wider font-semibold mb-2 text-gray-800 group-hover:text-[#FFBC13]">
+                <h3 className="text-[18px] font-roboto leading-6 tracking-wider font-medium mb-2 text-[#323232] group-hover:text-[#FFBC13]">
                   {service.title}
                 </h3>
-                <p className="text-gray-500 text-sm leading-relaxed">
+                <p className="text-[#676767] text-[15px] font-roboto leading-relaxed">
                   {service.description}
                 </p>
               </div>

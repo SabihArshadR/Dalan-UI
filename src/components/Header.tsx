@@ -62,21 +62,21 @@ export default function Header() {
           </div>
         </div>
 
-        <div className="relative h-[72px] flex items-center justify-center gap-64 font-[10px] font-roboto tracking-[1px] leading-px">
+        <div className="relative h-[72px] flex items-center ml-[400px] gap-64 font-[10px] font-roboto tracking-[1px] leading-px">
           <div className="flex items-center space-x-3 z-10">
             <div className="-ml-1"></div>
           </div>
           <nav className="hidden md:flex items-center space-x-10 text-white text-[13px] font-semibold">
             <a
-              className="text-[#FFBC14] cursor-pointer lg:ml-20"
+              className="text-[#FFBC14] cursor-pointer"
               onClick={() => router.push("/")}
             >
               HOME
             </a>
-            <div className="hover:text-[#FFBC14] flex items-center space-x-2">
+            {/* <div className="hover:text-[#FFBC14] flex items-center space-x-2">
               <a className=" cursor-pointer">E-SHOP </a>
               <FaAngleDown className="w-[9px] h-[13px]" />
-            </div>
+            </div> */}
             {/* <a className="hover:text-[#FFBC14] cursor-pointer">PAGES</a> */}
             <div
               className="relative cursor-pointer"
@@ -91,43 +91,43 @@ export default function Header() {
               <div
                 className={`
                   absolute left-0 mt-2 w-40 bg-[#262626] shadow-lg rounded
-                  overflow-hidden transition-all duration-300 px-5 py-5
+                  overflow-hidden py-5 transition-all duration-300
                   ${
                     pagesOpen
-                      ? "max-h-60 opacity-100 w-60"
+                      ? "max-h-60 opacity-100 w-52"
                       : "max-h-0 opacity-0"
                   }
                 `}
               >
                 <a
-                  className="block px-4 py-2 hover:text-[#FFBC14]"
+                  className="block px-4 py-5 hover:text-[#FFBC14]"
                   onClick={() => router.push("/blogpage")}
                 >
-                  Blog Page
+                  BLOG PAGE
                 </a>
                 <a
-                  className="block px-4 py-2 hover:text-[#FFBC14]"
+                  className="block px-4 py-5 hover:text-[#FFBC14]"
                   onClick={() => router.push("/gallery")}
                 >
-                  Gallery
+                  GALLERY
                 </a>
-                <a
+                {/* <a
                   className="block px-4 py-2 hover:text-[#FFBC14]"
                   onClick={() => router.push("/gallery")}
                 >
                   Single Gallery
-                </a>
+                </a> */}
                 <a
-                  className="block px-4 py-2 hover:text-[#FFBC14]"
+                  className="block px-4 py-5 hover:text-[#FFBC14]"
                   onClick={() => router.push("/services")}
                 >
-                  Services
+                  SERVICES
                 </a>
                 <a
-                  className="block px-4 py-2 hover:text-[#FFBC14]"
+                  className="block px-4 py-5 hover:text-[#FFBC14]"
                   onClick={() => router.push("/about")}
                 >
-                  About Page
+                  ABOUT PAGE
                 </a>
               </div>
             </div>
@@ -146,23 +146,23 @@ export default function Header() {
               <div
                 className={`
                   absolute left-0 mt-2 w-40 bg-[#262626] shadow-lg rounded
-                  overflow-hidden transition-all duration-300 px-5 py-5
+                  overflow-hidden transition-all duration-300 py-5
                   ${
-                    blogOpen ? "max-h-40 opacity-100 w-60" : "max-h-0 opacity-0"
+                    blogOpen ? "max-h-40 opacity-100 w-52" : "max-h-0 opacity-0"
                   }
                 `}
               >
                 <a
-                  className="block px-4 py-2 hover:text-[#FFBC14]"
+                  className="block px-4 py-5 hover:text-[#FFBC14]"
                   onClick={() => router.push("/blogpage")}
                 >
-                  Blog Page
+                  BLOG PAGE
                 </a>
                 <a
-                  className="block px-4 py-2 hover:text-[#FFBC14]"
+                  className="block px-4 py-5 hover:text-[#FFBC14]"
                   onClick={() => router.push("/singleblog")}
                 >
-                  Single Page
+                  SINGLE PAGE
                 </a>
               </div>
             </div>
@@ -184,12 +184,12 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-6 text-white">
             <FaSearch className="cursor-pointer w-[14px] h-[15px] hover:text-[#FFBC14]" />
 
-            <div className="relative cursor-pointer">
+            {/* <div className="relative cursor-pointer">
               <FaShoppingCart className="w-[14px] h-[15px] hover:text-[#FFBC14]" />
               <span className="absolute -top-2 -right-3 bg-[#FFBC14] text-black text-[10px] rounded-full px-1 py-2 font-roboto">
                 4
               </span>
-            </div>
+            </div> */}
 
             <FaCog className="cursor-pointer w-[13px] h-[15px] hover:text-[#FFBC14]" />
           </div>
@@ -205,7 +205,7 @@ export default function Header() {
         {open && (
           <div className="md:hidden bg-[#262626] flex flex-col text-white px-6 py-4 space-y-4 border-t border-gray-700">
             <a onClick={() => router.push("/")}>HOME </a>
-            <a>E-SHOP </a>
+            {/* <a>E-SHOP </a> */}
             <a>PAGES </a>
             <a onClick={() => router.push("/blogpage")}>BLOG </a>
             <a onClick={() => router.push("/gallery")}>GALLERY </a>

@@ -12,7 +12,9 @@ const page = () => {
       <div className="mt-10">
         <Services />
       </div>
-      <Facts />
+      <div className="h-20 bg-[#FBFBFB]">
+      </div>
+        <Facts />
       <Prices />
       <Footer />
     </div>

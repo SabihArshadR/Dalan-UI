@@ -61,8 +61,10 @@ export default function WhyChoose() {
 
   return (
     <section className="pt-20 bg-white">
+      <div className="max-w-[1320px] mx-auto">
+
       <div className="text-center mb-10">
-        <h2 className="text-[40px] font-montserrat font-bold tracking-wide text-[#414141]">
+        <h2 className="text-[40px] font-montserrat font-bold tracking-[4px] text-[#414141]">
           WHY <span className="text-[#FFBC13]">CHOOSE</span>
         </h2>
 
@@ -73,7 +75,7 @@ export default function WhyChoose() {
           <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
         </div>
 
-        <p className="lg:max-w-[648px] text-sm font-roboto mx-auto text-[#6b6b6b] mt-5">
+        <p className="lg:max-w-[648px] text-sm font-roboto mx-auto text-[#6b6b6b] mt-5 leading-6">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>
@@ -98,7 +100,7 @@ export default function WhyChoose() {
               </button>
 
               {openIndex === index && (
-                <div className="px-4 py-8 text-[#333333] text-sm font-roboto">
+                <div className="px-3 py-8 text-[#333333] text-sm font-roboto leading-6">
                   {item.content}
                 </div>
               )}
@@ -114,9 +116,10 @@ export default function WhyChoose() {
           onMouseLeave={handleMouseLeave}
           style={{
             transform: isHovering 
-              ? `translate(${mousePosition.x}px, ${mousePosition.y}px)`
+            ? `translate(${mousePosition.x}px, ${mousePosition.y}px)`
               : 'translate(0, 0)',
           }}
+          // transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative;
         >
           <Image
             src={Workers}
@@ -127,6 +130,7 @@ export default function WhyChoose() {
           />
         </div>
       </div>
+            </div>
     </section>
   );
 }

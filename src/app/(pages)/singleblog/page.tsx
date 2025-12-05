@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <Header/>
-      <div className='mt-20'>
+      <div className='lg:mt-20'>
 
       <BlogPage/>
       </div>

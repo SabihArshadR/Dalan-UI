@@ -14,11 +14,13 @@ export default function CommentSection() {
 
   return (
     <div className="py-16 bg-white">
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-4 gap-10">
+      <div className="container max-w-[1320px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-4 gap-10">
         
         <div className="lg:col-span-3">
           
-          <div className="flex justify-between items-center text-sm text-gray-500 mb-10">
+              <div className="w-full border-b border-[#e1e1e1] mb-5"></div>
+          <div className="flex justify-between items-center text-[12px] font-bold text-[#787878] mb-5">
+
             <span className="cursor-pointer">&lt; PREV POST</span>
 
             <div className="flex justify-center">
@@ -31,13 +33,15 @@ export default function CommentSection() {
 
             <span className="cursor-pointer">NEXT POST &gt;</span>
           </div>
-          <h2 className="text-center font-semibold tracking-wide text-black text-lg mb-10">
+              <div className="w-full border-b border-[#e1e1e1] mb-7"></div>
+
+          <h2 className="text-center font-semibold tracking-[1px] text-[24px] font-roboto text-[#333333] mb-10">
             COMMENTS ON THIS POST
           </h2>
           {[1, 2].map((_, index) => (
             <div
               key={index}
-              className="border border-gray-200 p-10 mb-10 text-center"
+              className="border-2 border-[#F9F9F9] p-10 mb-10 text-center w-[896px]"
             >
               <div className="flex justify-center mb-4">
                 <div className="relative h-20 w-20">
@@ -50,13 +54,13 @@ export default function CommentSection() {
                 </div>
               </div>
 
-              <h3 className="font-semibold text-gray-800">JOHN DOE</h3>
+              <h3 className="tracking-[3px] text-black font-roboto text-[13px]">JOHN DOE</h3>
 
               <p className="text-gray-500 text-xs mt-1">
                 {index === 0 ? "27 JAN 2015" : "27 JUNE 2016"}
               </p>
 
-              <p className="text-gray-600 mt-4 leading-relaxed text-sm max-w-2xl mx-auto">
+              <p className="text-[#676767] font-roboto mt-4 leading-6 text-sm max-w-[832px] mx-auto">
                 Lorem ipsum dolor sit amet, in urna molestie tristique. A
                 fermentum sed at, facilisis facilisis lacinia aliquam fusce
                 volutpat, porta ligula nibh vel congue diam. Sed ligula erat
@@ -64,7 +68,7 @@ export default function CommentSection() {
                 pellentesque, praesent fringilla sit amet in suspendisse.
               </p>
 
-              <button className="mt-5 bg-[#FFBC13] text-white px-4 py-1 text-xs uppercase">
+              <button className="mt-5 border border-[#FFBC13] hover:bg-[#FFBC13] hover:text-white cursor-pointer text-black px-4 py-1 text-xs uppercase transition-colors duration-500">
                 Reply
               </button>
             </div>
@@ -74,31 +78,33 @@ export default function CommentSection() {
               <input
                 type="text"
                 placeholder="Name :"
-                className="border w-full px-3 py-2 text-sm outline-none"
+                className="border border-[#DDDDDD]   w-full px-3 py-4 text-sm outline-none text-black"
               />
 
               <input
                 type="email"
                 placeholder="Email :"
-                className="border w-full px-3 py-2 text-sm outline-none"
+                className="border border-[#DDDDDD] text-[16px] w-full px-3 py-2 text-sm outline-none text-black"
               />
 
               <input
                 type="text"
                 placeholder="Number :"
-                className="border w-full px-3 py-2 text-sm outline-none"
+                className="border border-[#DDDDDD] text-[16px] w-full px-3 py-2 text-sm outline-none text-black"
               />
             </div>
 
             <textarea
               placeholder="Message :"
               rows={5}
-              className="border w-full px-3 py-2 text-sm outline-none"
+              className="border border-[#DDDDDD] text-[16px] w-full px-3 py-2 text-sm outline-none text-black"
             ></textarea>
+            <div className="flex justify-center">
 
-            <button className="mt-6 bg-[#FFBC13] text-white px-6 py-2 text-sm uppercase">
+            <button className="mt-6 bg-[#FFBC13] text-white px-7 py-4 text-[16px] font- uppercase font-bold tracking-[2px]">
               Submit
             </button>
+            </div>
           </form>
         </div>
         {/* <aside className="space-y-10">

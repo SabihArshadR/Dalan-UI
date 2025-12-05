@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import work1 from "@/assets/work-1.jpg";
 import work2 from "@/assets/work-2.jpg";
@@ -39,10 +39,6 @@ export default function Gallery() {
     { id: 10, image: work6, category: "Building" },
     { id: 11, image: work1, category: "Building" },
     { id: 12, image: work8, category: "Construction" },
-
-
-
-
   ];
 
   const filteredWorks =
@@ -52,7 +48,7 @@ export default function Gallery() {
 
   return (
     <section className="py-24 bg-white text-center">
-      <h2 className="text-[40px] tracking-wider mb-4 font-montserrat">
+      <h2 className="text-[40px] tracking-[4px] mb-4 font-montserrat">
         <span className="text-gray-700 font-bold">OUR </span>
         <span className="text-[#FFBC13] font-bold">GALLERY</span>
       </h2>
@@ -63,7 +59,7 @@ export default function Gallery() {
         <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
       </div>
 
-      <p className="text-[#6b6b6b] max-w-[648px] mx-auto mb-10 mt-5 font-roboto text-sm">
+      <p className="text-[#6b6b6b] max-w-[648px] mx-auto mb-10 mt-5 font-roboto text-sm leading-6">
         Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
         lectus quis dui euismod con placerat massa nec elit egestas efficitur.
       </p>
@@ -72,10 +68,10 @@ export default function Gallery() {
           <button
             key={category}
             onClick={() => setActiveCategory(category)}
-            className={`flex items-center gap-2 border-2 px-3 py-1.5 text-[15px] font-roboto transition
+            className={`flex items-center gap-2 border-2 px-3 py-1.5 text-[15px] font-roboto transition hover:cursor-pointer
               ${
                 activeCategory === category
-                  ? "bg-[#FFBC13] text-white"
+                  ? "bg-[#FFBC13] text-white border-[#FFBC13] border"
                   : "border-[#FFBC13] text-[#383838]"
               }`}
           >
@@ -83,15 +79,32 @@ export default function Gallery() {
           </button>
         ))}
       </div>
-      <div className="grid lg:grid-cols-4 gap-6 max-w-6xl lg:mx-auto mx-2">
+      <div className="grid lg:grid-cols-4 gap-4 lg:max-w-[1320px] lg:mx-auto mx-2">
         {filteredWorks.length > 0 ? (
           filteredWorks.map((work) => (
-            <div key={work.id} className="overflow-hidden rounded-sm shadow-sm">
-              <Image
-                src={work.image}
-                alt={`${work.category} Work ${work.id}`}
-                className="w-full h-56 object-cover hover:scale-105 transition duration-300"
-              />
+            <div key={work.id} className="overflow-hidden relative group">
+              <div className="relative">
+                <Image
+                  src={work.image}
+                  alt={`${work.category} Work ${work.id}`}
+                  className="lg:max-w-[306px] lg:max-h-[261px] object-cover group-hover:scale-110 transition-all duration-500"
+                />
+                <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
+              </div>
+              <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4">
+                <div className="space-y-4 text-center">
+                  <div className="overflow-hidden">
+                    <span className="block transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 text-[18px] font-roboto text-[#FFBC13]">
+                      BUILDINGS
+                    </span>
+                  </div>
+                  <div className="overflow-hidden">
+                    <span className="block transform translate-x-full group-hover:translate-x-0 transition-transform duration-500 text-[15px] text-white font-roboto">
+                      INTERIOR
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           ))
         ) : (

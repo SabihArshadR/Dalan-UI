@@ -14,7 +14,7 @@ import Logo from "@/assets/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#202020] text-[#BABABA] pt-20 pb-10 font-roboto lg:pl-[250px]">
+    <footer className="bg-[#202020] text-[#BABABA] pt-20 pb-10 font-roboto lg:px-[250px]">
       <div className=" mx-auto px-6 lg:flex lg:grid-cols-2  lg:gap- gap-14">
         <div>
           <div className="flex items-center space-x-3 mb-4">
@@ -58,12 +58,12 @@ export default function Footer() {
               <li>Loren ipsum dolor consectetur elito</li>
             </ul>
           </div>
-          <div className="lg:ml-10">
+          <div className="lg:ml-14">
             <h3 className="text-white tracking-wider text-[22px] mb-6">
               CONTACT INFO
             </h3>
 
-            <ul className="space-y-5 text-[#BABABA] text-[15px]">
+            <ul className="space-y-4 text-[#BABABA] text-[15px]">
               <li className="flex items-center space-x-3">
                 <FaPhoneAlt className="" />
                 <span>Call Us 0 (245) 378-6748</span>
@@ -88,9 +88,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-[1400px] mx-auto mt-16 border-t  border-[#2F2929]"></div>
+      <div className="max-w-[1320px] mt-16 border-t  border-[#2F2929]"></div>
 
-      <div className="max-w-[1400px] mx-auto px-6 mt-8 flex items-center justify-between text-sm">
+      <div className="max-w-[1320px] px-6 mt-8 flex items-center justify-between text-sm">
         <p className="text-[#BABABA] text-[13px]">
           {new Date().getFullYear()} © Copyright Dalan. All rights reserved.
         </p>

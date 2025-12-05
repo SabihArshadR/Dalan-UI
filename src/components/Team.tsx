@@ -10,8 +10,8 @@ import Avatar from "@/assets/tes1.jpg";
 export default function TeamMember() {
   return (
     <section className="w-full bg-[#FBFBFB] py-20">
-      <div className="max-w-[1400px] mx-auto text-center px-4">
-        <h2 className="text-[40px] font-montserrat font-bold tracking-[5px] text-gray-800">
+      <div className="max-w-[1320px] mx-auto text-center px-4">
+        <h2 className="text-[40px] font-montserrat font-bold tracking-[5px] text-[#414141]">
           TEAM <span className="text-[#FFBC13]">MEMBER</span>
         </h2>
         <div className="flex justify-center mt-4">
@@ -20,7 +20,7 @@ export default function TeamMember() {
         <div className="flex justify-center mt-1.5">
           <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
         </div>
-        <p className="text-[#6b6b6b] font-roboto text-sm max-w-2xl mx-auto mt-4">
+        <p className="text-[#6b6b6b] font-roboto text-sm max-w-2xl mx-auto mt-4 leading-6">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>
@@ -69,7 +69,7 @@ export default function TeamMember() {
       </div>
       <div className="mt-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-[40px] font-bold tracking-[5px] text-[#414141] font-montserrat">
+          <h2 className="text-[40px] font-bold tracking-[5px] text-[#414141] font-montserrat pt-20">
             OUR <span className="text-[#FFBC13]">TESTIMONIAL</span>
           </h2>
           <div className="flex justify-center mt-4">
@@ -85,7 +85,7 @@ export default function TeamMember() {
           </p>
         </div>
         <div className="lg:max-w-[856px] mx-auto bg-[#f2f2f2] p-10 mt-14">
-          <p className="text-[#585757] text-sm font-roboto leading-relaxed">
+          <p className="text-[#585757] text-sm leading-6 font-roboto">
             Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue
             reformidans atomorum his id, pri te hinc expetenda. Est an mundi
             tollit iuvaret. An ius postulant reformidans. Vel an elit ludus
@@ -93,15 +93,21 @@ export default function TeamMember() {
             diam
           </p>
         </div>
-        <div className="lg:max-w-[856px] mx-auto flex items-center bg-white gap-4 mt-6">
-          <div className="w-14 h-14 rounded-full overflow-hidden">
-            <Image src={Avatar} alt="Profile" width={56} height={56} />
+        <div className="lg:max-w-[856px] mx-auto flex items-center bg-white gap-4 mt-6 ">
+          <div className="w-20 h-20 rounded-full overflow-hidden">
+            <Image src={Avatar} alt="Profile" width={80} height={80} />
           </div>
-          <div className="text-left">
-            <p className="font-semibold text-black">JOHN WATSON</p>
-            <p className="text-sm text-gray-500">CEO At Facebook</p>
+          <div className="text-left ml-10">
+            <p className="font-semibold text-black font-roboto text-[15px] tracking-[2px]">
+              JOHN WATSON
+            </p>
+            <p className="text-[13px] font-roboto text-[#5d5d5d]">
+              CEO At Google
+            </p>
           </div>
-          <span className="text-[#FFBC13] text-4xl ml-auto">&#10078;</span>
+          <span className="text-[#FFBC13] text-[80px] ml-auto mr-[120px]">
+            &#10078;
+          </span>
         </div>
       </div>
     </section>

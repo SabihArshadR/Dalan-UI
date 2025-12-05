@@ -5,7 +5,7 @@ import Image1 from "@/assets/about.jpg";
 const Welcome = () => {
   return (
     <div>
-      <div className="lg:flex gap-10 justify-center bg-white pt-10">
+      <div className="lg:flex gap-10 justify-center bg-white pt-10 pb-[100px]">
         <div>
           <Image src={Image1} alt="About" />
         </div>

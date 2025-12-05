@@ -105,10 +105,10 @@ export default function Hero() {
       <div>
         <section className="bg-[#FFBC13]">
           <div className="h-[158px] flex justify-between flex-row items-center lg:ml-[300px] lg:mr-[520px] mx-5 font-montserrat">
-            <h2 className="text-[#333333] tracking-[6px] font-e text-[25px] uppercase">
+            <h2 className="text-[#333333] tracking-[4px] font-e text-[25px] uppercase">
               WE’RE READY TO WORK WITH YOU
             </h2>
-            <button className=" bg-white text-black px-10 py-3 text-[16px] tracking-wider font-semibold hover:bg-black hover:text-white transition">
+            <button className=" bg-white text-[#333333] px-10 py-3 text-[16px] tracking-wider font-bold hover:bg-black hover:text-white transition">
               GET A QUOTE
             </button>
           </div>

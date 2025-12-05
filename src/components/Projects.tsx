@@ -7,17 +7,17 @@ export default function Projects() {
   const offers = [
     {
       img: Offer1,
-      title: "Security Protection",
+      title: "SECURITY PROTECTION",
       desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
     },
     {
       img: Offer2,
-      title: "Brand Identity",
+      title: "BRAND IDENTITY",
       desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
     },
     {
       img: Offer3,
-      title: "Business Strategy",
+      title: "BUSINESS STRATEGY",
       desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
     },
   ];
@@ -25,7 +25,7 @@ export default function Projects() {
   return (
     <section className="py-20 bg-[#FBFBFB]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center">
+        <h2 className="text-[40px] font-bold text-center font-montserrat tracking-[4px]">
           <span className="text-[#414141]">WE</span>{" "}
           <span className="text-[#FFBC13]">OFFER</span>{" "}
         </h2>
@@ -37,7 +37,7 @@ export default function Projects() {
           <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
         </div>
 
-        <p className="text-center max-w-2xl mx-auto mb-12 text-[#6B6B6B] mt-5">
+        <p className="text-center max-w-[648px] mx-auto mb-12 text-[#6B6B6B] text-sm font-roboto mt-5 leading-6">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
           lectus quis dui euismod con placerat massa nec elit egestas efficitur.
         </p>
@@ -45,7 +45,7 @@ export default function Projects() {
         <div className="grid lg:not-first:max-w-[1320px] mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {offers.map((offer, index) => (
             <div key={index} className="text-center">
-              <div className="relative h-64 rounded overflow-hidden shadow bg-gray-200">
+              <div className="relative h-64 overflow-hidden">
                 <Image
                   src={offer.img}
                   alt={offer.title}
@@ -55,12 +55,12 @@ export default function Projects() {
               </div>
 
               {/* Title */}
-              <h3 className="text-[17px] text-left font-roboto font-semibold mt-4 text-[#414141]">
+              <h3 className="text-[17px] text-left font-roboto font-semibold mt-4 tracking-[3px] text-[#333333]">
                 {offer.title}
               </h3>
 
               {/* Description */}
-              <p className="text-[#6B6B6B] text-sm font-roboto text-left mt-2">
+              <p className="text-[#676767] text-sm font-roboto text-left mt-2 leading-[24px]">
                 {offer.desc}
               </p>
             </div>

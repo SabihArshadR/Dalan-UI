@@ -15,8 +15,8 @@ export default function BlogPage() {
   return (
     <section className="bg-white pb-20">
       <div className="relative h-[600px] font-roboto">
-        <div className="absolute inset-0 bg-[url('/slider2.jpg')] transform scale-x-[-1]"></div>
-        <div className="absolute lg:top-[400px] lg:left-[300px] transform -translate-y-1/2">
+        <div className="absolute inset-0 bg-[url('/slider2.jpg')]  transform scale-x-[-1]"></div>
+        <div className="absolute top-[400px] lg:left-[300px] transform -translate-y-1/2">
           <p className="text-[14px] tracking-[5px] font-bold">
             <span className="text-[#605B5B]">Home </span>
             <span className="text-[#6E6E6E]">/ BLOG</span>
@@ -27,15 +27,15 @@ export default function BlogPage() {
         </div>
       </div>
 
-      <div className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-4 gap-10 mt-20">
+      <div className="container max-w-[1320px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-4 gap-10 mt-20">
         <div className="lg:col-span-3 space-y-16">
           <article>
-            <div className="relative h-[350px] w-full">
+            <div className="relative h-[475px] max-w-[908px]">
               <Image
                 src={Post1}
                 alt="Blog Image"
                 fill
-                className="object-cover"
+                className="object-cover object-[50%_0%]"
               />
             </div>
 
@@ -116,20 +116,20 @@ export default function BlogPage() {
           </div>
         </div>
         <aside className="space-y-10">
-          <div>
+          <div className="">
             <input
               type="text"
               placeholder="Search"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
-              className="w-full border px-4 py-2 text-sm outline-none"
+              className="w-full border-3 px-4 py-3 text-sm outline-none border-[#EFEAEA] text-[#595C5F]"
             />
           </div>
           <div>
             <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">
               POST CATEGORIES
             </h3>
-            <ul className="space-y-2 text-[15px] font-roboto text-[#6f6f6f] ">
+            <ul className="space-y-3 text-[15px] tracking-[1px] font-roboto text-[#6f6f6f] ">
               <li>Windows</li>
               <div className="w-full border-b border-[#e1e1e1]"></div>
               <li>Laptop</li>
@@ -150,21 +150,24 @@ export default function BlogPage() {
               <li>
                 <strong>THIS IS LATEST PIC</strong>
                 <br />
-                <span className="text-[#8b8b8b] text-[13px] font-normal">
+                <span className="text-[#8b8b8b] text-[13px] font-normal tracking-normal">
                   25th Dec 2015
                 </span>
               </li>
+              <div className="w-full border-b border-[#e1e1e1] mt-7"></div>
+
               <li>
                 <strong>THIS IS VIDEO</strong>
                 <br />
-                <span className="text-[#8b8b8b] text-[13px] font-normal">
+                <span className="text-[#8b8b8b] text-[13px] font-normal tracking-normal">
                   25th Dec 2015
                 </span>
               </li>
+              <div className="w-full border-b border-[#e1e1e1] mt-7"></div>
               <li>
                 <strong>GRAPHIC DESIGN</strong>
                 <br />
-                <span className="text-[#8b8b8b] text-[13px] font-normal">
+                <span className="text-[#8b8b8b] text-[13px] font-normal tracking-normal">
                   25th Dec 2015
                 </span>
               </li>
