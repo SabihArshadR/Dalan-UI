@@ -10,11 +10,25 @@ const page = () => {
     <div>
       <Header />
       <div className="mt-10">
+        <div className="relative h-[600px] font-roboto">
+          <div
+            className="absolute inset-0 bg-[url('/page_bg.jpg')] bg-no-repeat bg-cover"
+            style={{ backgroundPosition: "50% 40%" }}
+          ></div>
+          <div className="absolute top-[400px] lg:left-[300px] transform -translate-y-1/2">
+            <p className="text-[14px] tracking-[5px] font-bold">
+              <span className="text-[#605B5B]">Home </span>
+              <span className="text-[#6E6E6E]">/ Service</span>
+            </p>
+            <h1 className="text-[45px] text-[#333333] font-medium lg:tracking-[4px]">
+              OUR SERVICE
+            </h1>
+          </div>
+        </div>
         <Services />
       </div>
-      <div className="h-20 bg-[#FBFBFB]">
-      </div>
-        <Facts />
+      <div className="h-20 bg-[#FBFBFB]"></div>
+      <Facts />
       <Prices />
       <Footer />
     </div>

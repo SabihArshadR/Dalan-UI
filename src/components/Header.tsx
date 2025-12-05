@@ -66,30 +66,32 @@ export default function Header() {
           <div className="flex items-center space-x-3 z-10">
             <div className="-ml-1"></div>
           </div>
-          <nav className="hidden md:flex items-center space-x-10 text-white text-[13px] font-semibold">
-            <a
-              className="text-[#FFBC14] cursor-pointer"
-              onClick={() => router.push("/")}
-            >
-              HOME
-            </a>
-            {/* <div className="hover:text-[#FFBC14] flex items-center space-x-2">
+          <div className="flex justify-between w-full">
+            <div>
+              <nav className="hidden md:flex items-center space-x-10 text-white text-[13px] font-semibold">
+                <a
+                  className="text-[#FFBC14] cursor-pointer"
+                  onClick={() => router.push("/")}
+                >
+                  HOME
+                </a>
+                {/* <div className="hover:text-[#FFBC14] flex items-center space-x-2">
               <a className=" cursor-pointer">E-SHOP </a>
               <FaAngleDown className="w-[9px] h-[13px]" />
             </div> */}
-            {/* <a className="hover:text-[#FFBC14] cursor-pointer">PAGES</a> */}
-            <div
-              className="relative cursor-pointer"
-              onMouseEnter={() => setPagesOpen(true)}
-              onMouseLeave={() => setPagesOpen(false)}
-            >
-              <div className="hover:text-[#FFBC14] flex items-center space-x-2">
-                <span className="">PAGES</span>
-                <FaAngleDown className="w-[9px] h-[13px]" />
-              </div>
+                {/* <a className="hover:text-[#FFBC14] cursor-pointer">PAGES</a> */}
+                <div
+                  className="relative cursor-pointer"
+                  onMouseEnter={() => setPagesOpen(true)}
+                  onMouseLeave={() => setPagesOpen(false)}
+                >
+                  <div className="hover:text-[#FFBC14] flex items-center space-x-2">
+                    <span className="">PAGES</span>
+                    <FaAngleDown className="w-[9px] h-[13px]" />
+                  </div>
 
-              <div
-                className={`
+                  <div
+                    className={`
                   absolute left-0 mt-2 w-40 bg-[#262626] shadow-lg rounded
                   overflow-hidden py-5 transition-all duration-300
                   ${
@@ -98,102 +100,104 @@ export default function Header() {
                       : "max-h-0 opacity-0"
                   }
                 `}
-              >
-                <a
-                  className="block px-4 py-5 hover:text-[#FFBC14]"
-                  onClick={() => router.push("/blogpage")}
-                >
-                  BLOG PAGE
-                </a>
-                <a
-                  className="block px-4 py-5 hover:text-[#FFBC14]"
-                  onClick={() => router.push("/gallery")}
-                >
-                  GALLERY
-                </a>
-                {/* <a
+                  >
+                    <a
+                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      onClick={() => router.push("/blogpage")}
+                    >
+                      BLOG PAGE
+                    </a>
+                    <a
+                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      onClick={() => router.push("/gallery")}
+                    >
+                      GALLERY
+                    </a>
+                    {/* <a
                   className="block px-4 py-2 hover:text-[#FFBC14]"
                   onClick={() => router.push("/gallery")}
                 >
                   Single Gallery
                 </a> */}
-                <a
-                  className="block px-4 py-5 hover:text-[#FFBC14]"
-                  onClick={() => router.push("/services")}
-                >
-                  SERVICES
-                </a>
-                <a
-                  className="block px-4 py-5 hover:text-[#FFBC14]"
-                  onClick={() => router.push("/about")}
-                >
-                  ABOUT PAGE
-                </a>
-              </div>
-            </div>
-            {/* <a className="hover:text-[#FFBC14] cursor-pointer">BLOG</a> */}
+                    <a
+                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      onClick={() => router.push("/services")}
+                    >
+                      SERVICES
+                    </a>
+                    <a
+                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      onClick={() => router.push("/about")}
+                    >
+                      ABOUT PAGE
+                    </a>
+                  </div>
+                </div>
+                {/* <a className="hover:text-[#FFBC14] cursor-pointer">BLOG</a> */}
 
-            <div
-              className="relative cursor-pointer"
-              onMouseEnter={() => setBlogOpen(true)}
-              onMouseLeave={() => setBlogOpen(false)}
-            >
-              <div className="flex items-center space-x-2 hover:text-[#FFBC14]">
-                <span className="">BLOG</span>
-                <FaAngleDown className="w-[9px] h-[13px]" />
-              </div>
+                <div
+                  className="relative cursor-pointer"
+                  onMouseEnter={() => setBlogOpen(true)}
+                  onMouseLeave={() => setBlogOpen(false)}
+                >
+                  <div className="flex items-center space-x-2 hover:text-[#FFBC14]">
+                    <span className="">BLOG</span>
+                    <FaAngleDown className="w-[9px] h-[13px]" />
+                  </div>
 
-              <div
-                className={`
+                  <div
+                    className={`
                   absolute left-0 mt-2 w-40 bg-[#262626] shadow-lg rounded
                   overflow-hidden transition-all duration-300 py-5
                   ${
                     blogOpen ? "max-h-40 opacity-100 w-52" : "max-h-0 opacity-0"
                   }
-                `}
-              >
+                  `}
+                  >
+                    <a
+                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      onClick={() => router.push("/blogpage")}
+                    >
+                      BLOG PAGE
+                    </a>
+                    <a
+                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      onClick={() => router.push("/singleblog")}
+                    >
+                      SINGLE PAGE
+                    </a>
+                  </div>
+                </div>
+
                 <a
-                  className="block px-4 py-5 hover:text-[#FFBC14]"
-                  onClick={() => router.push("/blogpage")}
+                  className="hover:text-[#FFBC14] cursor-pointer"
+                  onClick={() => router.push("/gallery")}
                 >
-                  BLOG PAGE
+                  GALLERY
                 </a>
                 <a
-                  className="block px-4 py-5 hover:text-[#FFBC14]"
-                  onClick={() => router.push("/singleblog")}
+                  className="hover:text-[#FFBC14] cursor-pointer"
+                  onClick={() => router.push("/contact")}
                 >
-                  SINGLE PAGE
+                  CONTACT
                 </a>
-              </div>
+              </nav>
             </div>
+            <div className="mr-[350px]">
+              <div className="hidden md:flex items-center space-x-6 ml-[150px]  text-white">
+                <FaSearch className="cursor-pointer w-[14px] h-[15px] hover:text-[#FFBC14]" />
 
-            <a
-              className="hover:text-[#FFBC14] cursor-pointer"
-              onClick={() => router.push("/gallery")}
-            >
-              GALLERY
-            </a>
-            <a
-              className="hover:text-[#FFBC14] cursor-pointer"
-              onClick={() => router.push("/contact")}
-            >
-              CONTACT
-            </a>
-          </nav>
-
-          <div className="hidden md:flex items-center space-x-6 text-white">
-            <FaSearch className="cursor-pointer w-[14px] h-[15px] hover:text-[#FFBC14]" />
-
-            {/* <div className="relative cursor-pointer">
+                {/* <div className="relative cursor-pointer">
               <FaShoppingCart className="w-[14px] h-[15px] hover:text-[#FFBC14]" />
               <span className="absolute -top-2 -right-3 bg-[#FFBC14] text-black text-[10px] rounded-full px-1 py-2 font-roboto">
-                4
+              4
               </span>
-            </div> */}
+              </div> */}
 
-            <FaCog className="cursor-pointer w-[13px] h-[15px] hover:text-[#FFBC14]" />
+                <FaCog className="cursor-pointer w-[13px] h-[15px] hover:text-[#FFBC14]" />
+              </div>
+            </div>
           </div>
-
           <button
             onClick={() => setOpen(!open)}
             className="lg:hidden text-white text-2xl"

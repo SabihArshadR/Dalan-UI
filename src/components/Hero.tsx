@@ -34,10 +34,20 @@ export default function Hero() {
       <section className="relative h-[750px] flex items-center overflow-hidden">
         <div
           key={`current-${currentSlide}`}
-          className={`absolute inset-0  transition-transform duration-1000 ${
+          className={`absolute inset-0 transition-transform duration-1000 ${
             isTransitioning ? "-translate-x-full" : "translate-x-0"
           }`}
-          style={{ backgroundImage: `url('${slides[currentSlide]}')` }}
+          style={{
+            backgroundImage: `url('${slides[currentSlide]}')`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            width: "100vw",
+            left: "50%",
+            marginLeft: "-50vw",
+            right: "50%",
+            marginRight: "-50vw",
+          }}
         />
         {isTransitioning && (
           <div
@@ -45,6 +55,14 @@ export default function Hero() {
             className="absolute inset-0 transition-transform duration-1000 translate-x-0"
             style={{
               backgroundImage: `url('${slides[nextSlide]}')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+              backgroundRepeat: "no-repeat",
+              width: "100vw",
+              left: "50%",
+              marginLeft: "-50vw",
+              right: "50%",
+              marginRight: "-50vw",
               transform: "translateX(100%)",
               animation: "slideIn 1s forwards",
             }}

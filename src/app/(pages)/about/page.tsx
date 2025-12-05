@@ -10,7 +10,7 @@ const page = () => {
       <Header />
       <div>
         <div className="relative h-[600px] font-roboto">
-          <div className="absolute inset-0 bg-[url('/page_bg.jpg')]"></div>
+          <div className="absolute inset-0 bg-[url('/page_bg.jpg')] bg-no-repeat bg-cover"></div>
           <div className="absolute lg:top-[400px] lg:left-[300px] transform -translate-y-1/2">
             <p className="text-[14px] tracking-[5px] font-bold">
               <span className="text-[#605B5B]">Home </span>

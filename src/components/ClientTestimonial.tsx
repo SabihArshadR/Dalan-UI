@@ -1,3 +1,5 @@
+"use client";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Image1 from "@/assets/client_1.jpg";
 import Image2 from "@/assets/client_2.jpg";
@@ -6,7 +8,43 @@ import Image4 from "@/assets/client_4.jpg";
 import Image5 from "@/assets/client_5.jpg";
 import Avatar from "@/assets/tes1.jpg";
 
+const testimonials = [
+  {
+    text: "Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue reformidans atomorum his id, pri te hinc expetenda. Est an mundi tollit iuvaret. An ius postulant reformidans. Vel an elit ludus fabellas, ex quando adipisci accommodare usuet verar noluisse eum diam.",
+    name: "JOHN WATSON",
+    position: "CEO At Facebook",
+    avatar: Avatar,
+  },
+  {
+    text: "Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue reformidans atomorum his id, pri te hinc expetenda. Est an mundi tollit iuvaret. An ius postulant reformidans. Vel an elit ludus fabellas, ex quando adipisci accommodare usuet verar noluisse eum diam.",
+    name: "JANE SMITH",
+    position: "Marketing Director",
+    avatar: Avatar,
+  },
+  {
+    text: "Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue reformidans atomorum his id, pri te hinc expetenda. Est an mundi tollit iuvaret. An ius postulant reformidans. Vel an elit ludus fabellas, ex quando adipisci accommodare usuet verar noluisse eum diam.",
+    name: "MICHAEL JOHNSON",
+    position: "Project Manager",
+    avatar: Avatar,
+  },
+];
+
 export default function ClientTestimonial() {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+  const [isAnimating, setIsAnimating] = useState(false);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setIsAnimating(true);
+      setTimeout(() => {
+        setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+        setIsAnimating(false);
+      }, 500); // Half of the transition duration
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="lg:h-[676px] bg-[#FBFBFB]">
       <section className="w-full py-20">
@@ -28,29 +66,39 @@ export default function ClientTestimonial() {
         </div>
 
         <div className="lg:max-w-[1320px] lg:mx-auto lg:mt-16 grid lg:grid-cols-2 gap-6">
-          <div className="bg-[#f2f2f2]">
-            <p className="text-[#585757] leading-relaxed px-8 py-8 font-roboto text-sm">
-              Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue
-              reformidans atomorum his id, pri te hinc expetenda. Est an mundi
-              tollit iuvaret. An ius postulant reformidans. Vel an elit ludus
-              fabellas, ex quando adipisci accommodare usuet verar noluisse eum
-              diam.
-            </p>
-            <div className="flex items-center pt-[25px] pb-[39px] px-2 gap-4 bg-[#FBFBFB]">
-              <div className="rounded-full overflow-hidden">
-                <Image src={Avatar} alt="Profile" width={80} height={80} />
+          <div className="relative overflow-hidden h-full">
+            <div
+              className={`transition-transform duration-500 ease-in-out ${
+                isAnimating
+                  ? "translate-x-full opacity-0"
+                  : "translate-x-0 opacity-100"
+              }`}
+            >
+              <p className="text-[#585757] leading-relaxed bg-[#f2f2f2] px-8 py-8 font-roboto text-sm">
+                {testimonials[currentTestimonial].text}
+              </p>
+              <div className="flex items-center pt-[25px] pb-[40px] px-2 gap-4 bg-[#FBFBFB]">
+                <div className="rounded-full overflow-hidden">
+                  <Image
+                    src={testimonials[currentTestimonial].avatar}
+                    alt="Profile"
+                    width={80}
+                    height={80}
+                    className="object-cover w-20 h-20"
+                  />
+                </div>
+                <div className="text-left">
+                  <p className="font-semibold text-black text-[15px] font-roboto tracking-widest">
+                    {testimonials[currentTestimonial].name}
+                  </p>
+                  <p className="text-[15px] font-roboto text-[#5d5d5d]">
+                    {testimonials[currentTestimonial].position}
+                  </p>
+                </div>
+                <span className="text-[#FFBC13] text-[70px] ml-auto mr-24">
+                  &#10078;
+                </span>
               </div>
-              <div className="text-left">
-                <p className="font-semibold text-black text-[15px] font-roboto tracking-widest">
-                  JOHN WATSON
-                </p>
-                <p className="text-[15px] font-roboto text-[#5d5d5d]">
-                  CEO At Facebook
-                </p>
-              </div>
-              <span className="text-[#FFBC13] text-[70px] ml-auto mr-24">
-                &#10078;
-              </span>
             </div>
           </div>
           <div className="grid grid-cols-3 gap-3">

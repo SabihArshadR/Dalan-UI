@@ -10,7 +10,7 @@ const page = () => {
       <div className="mt-16">
         <div className="relative h-[550px] font-roboto">
           <div
-            className="absolute inset-0 bg-[url('/page_bg.jpg')]"
+            className="absolute inset-0 bg-[url('/page_bg.jpg')] bg-no-repeat bg-cover"
             style={{ backgroundPosition: "50% 65%" }}
           ></div>
           <div className="absolute top-[350px] lg:left-[300px] transform -translate-y-1/2">

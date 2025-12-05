@@ -46,21 +46,7 @@ export default function Services() {
   ];
 
   return (
-    <section className="bg-[#FBFBFB]">
-      <div className="relative h-[600px] font-roboto">
-        <div className="absolute inset-0 bg-[url('/page_bg.jpg')]"
-        style={{backgroundPosition: "50% 40%"}}
-        ></div>
-        <div className="absolute top-[400px] lg:left-[300px] transform -translate-y-1/2">
-          <p className="text-[14px] tracking-[5px] font-bold">
-            <span className="text-[#605B5B]">Home </span>
-            <span className="text-[#6E6E6E]">/ Service</span>
-          </p>
-          <h1 className="text-[45px] text-[#333333] font-medium lg:tracking-[4px]">
-            OUR SERVICE
-          </h1>
-        </div>
-      </div>
+    <section className="bg-[#FBFBFB] py-10">
       <div className="container mx-auto max-w-[1320px] text-center p-2 mt-10">
         <h2 className="text-[40px] font-montserrat font-bold tracking-[4px] mb-4">
           <span className="text-gray-700">OUR </span>

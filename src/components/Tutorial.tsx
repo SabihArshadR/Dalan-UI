@@ -4,7 +4,7 @@ import { FaCirclePlay } from 'react-icons/fa6'
 const Tutorial = () => {
   return (
     <div>
-      <div className="bg-[url('/video.jpg')] h-[360px] relative"
+      <div className="bg-[url('/video.jpg')] h-[360px] relative bg-no-repeat bg-cover"
       // style={{backgroundPosition: "50% 98.9188px"}}
       >
               <div className="absolute inset-0 flex items-center justify-center">

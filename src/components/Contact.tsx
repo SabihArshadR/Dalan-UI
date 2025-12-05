@@ -5,7 +5,7 @@ export default function Contact() {
     <div>
       <div className="relative h-[600px]">
         <div
-          className="absolute inset-0 bg-[url('/page_bg.jpg')]"
+          className="absolute inset-0 bg-[url('/page_bg.jpg')] bg-no-repeat bg-cover"
           style={{ backgroundPosition: "50% 45%" }}
         ></div>
         <div className="absolute top-[350px] lg:left-[300px]">
@@ -18,7 +18,7 @@ export default function Contact() {
           </h1>
         </div>
       </div>
-      <div className="w-full min-h-screen bg-white flex justify-center items-start py-24 px-6">
+      <div className="w-full bg-white flex justify-center items-start py-24 px-6">
         <div className="max-w-[789px] w-full text-center">
           <h1 className="text-[40px] font-montserrat font-bold tracking-[4px] text-[#414141]">
             GET IN <span className="text-[#FFBC13]">TOUCH</span>
