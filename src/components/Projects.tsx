@@ -31,15 +31,15 @@ export default function Projects() {
     <section className="py-20 bg-[#FBFBFB]">
       <div className="container mx-auto px-4">
         <h2 className="text-[40px] font-bold text-center font-montserrat tracking-[4px]">
-          <span className="text-[#414141]">WE</span>{" "}
-          <span className="text-[#FFBC13]">OFFER</span>{" "}
+          <span className="text-blue">WE</span>{" "}
+          <span className="text-green">OFFER</span>{" "}
         </h2>
 
         <div className="flex justify-center mt-4">
-          <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+          <div className="h-0.5 w-[100px] bg-blue" />
         </div>
         <div className="flex justify-center mt-1.5">
-          <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+          <div className="h-0.5 w-[40px] bg-green" />
         </div>
 
         <p className="text-center max-w-[648px] mx-auto mb-12 text-[#6B6B6B] text-sm font-roboto mt-5 leading-6">

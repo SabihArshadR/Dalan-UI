@@ -10,16 +10,16 @@ import {
   FaMapMarkerAlt,
   FaClock,
 } from "react-icons/fa";
-import Logo from "@/assets/logo.png";
+import Logo from "../../public/logo.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#202020] text-[#BABABA] pt-20 pb-10 font-roboto lg:px-[250px]">
-      <div className=" mx-auto px-6 lg:flex lg:grid-cols-2  lg:gap- gap-14">
+    <footer className="bg-[#202020] text-[#BABABA] pb-10 font-roboto lg:px-[250px]">
+      <div className=" mx-auto px-6 lg:flex lg:grid-cols-2 lg:gap- gap-14">
         <div>
-          <div className="flex items-center space-x-3 mb-4">
+          <div className="flex items-center space-x-3">
             <div className="-ml-1">
-              <Image src={Logo} alt="logo" />
+              <Image src={Logo} alt="logo" className="w-[100px] h-[100px] mt-3 object-cover"/>
             </div>
           </div>
           <div className="flex gap-5">
@@ -38,7 +38,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="lg:flex lg:ml-14">
+        <div className="lg:flex lg:ml-14 pt-10">
           <div>
             <h3 className="text-white tracking-wider text-[22px] mb-6">
               LATEST POST
@@ -97,7 +97,7 @@ export default function Footer() {
 
         <a
           href="#"
-          className="text-[#FFBC13] cursor-pointer tracking-widest text-[11px]"
+          className="text-blue cursor-pointer tracking-widest text-[11px]"
         >
           GO TOP
         </a>

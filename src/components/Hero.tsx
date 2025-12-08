@@ -102,8 +102,8 @@ export default function Hero() {
             DALAN CONSTRUCTION
           </h1>
           <h1 className="text-[44px] font-bold font-montserrat">
-            <span className="text-white">BUILD</span>{" "}
-            <span className="text-white">EVERYTHING</span>
+            <span className="text-blue">BUILD</span>{" "}
+            <span className="text-green">EVERYTHING</span>
           </h1>
           <p className="text-sm max-w-[636px] font-roboto">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
@@ -111,22 +111,22 @@ export default function Hero() {
             consectetuer adipiscing elit.
           </p>
           <div className="flex gap-5 mt-10">
-            <button className="px-8 py-3 bg-[#FFBC13] hover:bg-transparent border border-[#FFBC13] rounded shadow cursor-pointer font-roboto text-sm">
+            <button className="px-8 py-3 bg-blue hover:bg-transparent border border-blue rounded shadow cursor-pointer font-roboto text-sm">
               READ MORE
             </button>
-            <button className="px-8 py-3 hover:bg-[#FFBC13] bg-transparent border border-[#FFBC13] rounded shadow cursor-pointer font-roboto text-sm">
+            <button className="px-8 py-3 hover:bg-green bg-transparent border border-green rounded shadow cursor-pointer font-roboto text-sm">
               GET STARTED
             </button>
           </div>
         </div>
       </section>
       <div>
-        <section className="bg-[#FFBC13]">
+        <section className="bg-green">
           <div className="h-[158px] flex justify-between flex-row items-center lg:ml-[300px] lg:mr-[520px] mx-5 font-montserrat">
             <h2 className="text-[#333333] tracking-[4px] font-e text-[25px] uppercase">
               WE’RE READY TO WORK WITH YOU
             </h2>
-            <button className=" bg-white text-[#333333] px-10 py-3 text-[16px] tracking-wider font-bold hover:bg-black hover:text-white transition">
+            <button className=" bg-white text-[#333333] px-10 py-3 text-[16px] tracking-wider font-bold hover:bg-blue cursor-pointer hover:text-white transition">
               GET A QUOTE
             </button>
           </div>

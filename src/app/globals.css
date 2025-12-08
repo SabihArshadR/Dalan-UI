@@ -13,6 +13,8 @@
   --font-montserrat: var(--font-montserrat);
   --font-roboto: var(--font-roboto);
   --font-roboto_condensed: var(--font-roboto_condensed);
+  --color-blue: #2278A2;
+  --color-green: #18ABB5;
 }
 
 @media (prefers-color-scheme: dark) {

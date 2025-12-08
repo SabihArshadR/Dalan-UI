@@ -19,7 +19,7 @@ const page = () => {
               <span className="text-white">/ Gallery</span>
             </p>
             <h1 className="text-[45px] text-white font-medium lg:tracking-[4px]">
-              OUR GALLERY
+              <span className="text-blue">OUR</span> <span className="text-green">GALLERY</span> 
             </h1>
           </div>
         </div>

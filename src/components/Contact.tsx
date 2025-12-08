@@ -14,21 +14,21 @@ export default function Contact() {
             <span className="text-white">/ Contact</span>
           </p>
           <h1 className="text-[45px] font-roboto text-white tracking-[2px] font-semibold">
-            CONTACT US
+            <span className="text-blue">CONTACT</span> <span className="text-green">US</span>
           </h1>
         </div>
       </div>
       <div className="w-full bg-white flex justify-center items-start py-24 px-6">
         <div className="max-w-[789px] w-full text-center">
-          <h1 className="text-[40px] font-montserrat font-bold tracking-[4px] text-[#414141]">
-            GET IN <span className="text-[#FFBC13]">TOUCH</span>
+          <h1 className="text-[40px] font-montserrat font-bold tracking-[4px] text-blue">
+            GET IN <span className="text-green">TOUCH</span>
           </h1>
 
           <div className="flex justify-center mt-4">
-            <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+            <div className="h-0.5 w-[100px] bg-blue" />
           </div>
           <div className="flex justify-center mt-1.5">
-            <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+            <div className="h-0.5 w-[40px] bg-green" />
           </div>
 
           <p className="text-[#6b6b6b] text-sm font-roboto lg:max-w-[750px] mx-auto mt-6 leading-6">
@@ -68,7 +68,7 @@ export default function Contact() {
             <div className="mt-10">
               <button
                 type="submit"
-                className="bg-[#FFBC13] text-white font-semibold px-10 text-[15px] tracking-widest font-roboto py-3 hover:bg-black transition cursor-pointer"
+                className="bg-green text-white font-semibold px-10 text-[15px] tracking-widest font-roboto py-3 hover:bg-black transition cursor-pointer"
               >
                 SEND MESSAGE
               </button>

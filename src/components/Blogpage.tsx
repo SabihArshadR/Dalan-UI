@@ -95,7 +95,7 @@ export default function BlogPage() {
             <span className="text-white">/ BLOG</span>
           </p>
           <h1 className="text-[45px] text-white font-medium lg:tracking-[4px]">
-            LATEST NEWS
+          <span className="text-blue">LATEST</span> <span className="text-green">NEWS</span>
           </h1>
         </div>
       </div>
@@ -130,7 +130,7 @@ export default function BlogPage() {
                 {post.excerpt}
               </p>
 
-              <button className="mt-4 bg-[#FFBC13] text-white px-4 py-2 uppercase text-sm font-montserrat font-bold">
+              <button className="mt-4 bg-green text-white px-4 py-2 uppercase text-sm font-montserrat font-bold">
                 Read more
               </button>
             </article>
@@ -144,7 +144,7 @@ export default function BlogPage() {
               className={`border px-3 py-1 text-sm font-roboto text-[15px] font-bold ${
                 currentPage === 1
                   ? "bg-gray-300 cursor-not-allowed"
-                  : "bg-[#FFBC13] hover:bg-[#e6a90f]"
+                  : "bg-green hover:bg-green"
               }`}
             >
               &lt;
@@ -157,8 +157,8 @@ export default function BlogPage() {
                   onClick={() => paginate(number)}
                   className={`border px-3 py-1 text-sm font-roboto text-[15px] font-bold ${
                     currentPage === number
-                      ? "bg-[#e6a90f]"
-                      : "bg-[#FFBC13] hover:bg-[#e6a90f]"
+                      ? "bg-green"
+                      : "bg-green hover:bg-green"
                   }`}
                 >
                   {number.toString().padStart(2, "0")}
@@ -172,7 +172,7 @@ export default function BlogPage() {
               className={`border px-3 py-1 text-sm font-roboto text-[15px] font-bold ${
                 currentPage === totalPages
                   ? "bg-gray-300 cursor-not-allowed"
-                  : "bg-[#FFBC13] hover:bg-[#e6a90f]"
+                  : "bg-green hover:bg-green"
               }`}
             >
               &gt;
@@ -207,7 +207,7 @@ export default function BlogPage() {
             />
           </div>
           <div>
-            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">
+            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-blue text-center py-2 bg-[#F9F9F9]">
               POST CATEGORIES
             </h3>
             <ul className="space-y-3 text-[15px] tracking-[1px] font-roboto text-[#6f6f6f] ">
@@ -224,7 +224,7 @@ export default function BlogPage() {
             </ul>
           </div>
           <div>
-            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">
+            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-blue text-center py-2 bg-[#F9F9F9]">
               RECENT POST
             </h3>
             <ul className="text-sm text-[#333333] space-y-3 font-roboto tracking-[2px] font-extralight">
@@ -255,7 +255,7 @@ export default function BlogPage() {
             </ul>
           </div>
           <div>
-            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">
+            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-blue text-center py-2 bg-[#F9F9F9]">
               INSTAGRAM
             </h3>
 
@@ -279,7 +279,7 @@ export default function BlogPage() {
             </div>
           </div>
           <div>
-            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-[#FFBC13] text-center py-2 bg-[#F9F9F9]">
+            <h3 className="font-normal mb-5 font-montserrat text-[18px] text-blue text-center py-2 bg-[#F9F9F9]">
               TOP TAGS
             </h3>
 

@@ -26,7 +26,7 @@ export default function CommentSection() {
             <div className="flex justify-center">
               <div className="w-8 h-8 grid grid-cols-3 grid-rows-3 gap-[2px] cursor-pointer">
                 {[...Array(9)].map((_, i) => (
-                  <span key={i} className="bg-[#FFBC13]"></span>
+                  <span key={i} className="bg-green"></span>
                 ))}
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function CommentSection() {
                 pellentesque, praesent fringilla sit amet in suspendisse.
               </p>
 
-              <button className="mt-5 border border-[#FFBC13] hover:bg-[#FFBC13] hover:text-white cursor-pointer text-black px-4 py-1 text-xs uppercase transition-colors duration-500">
+              <button className="mt-5 border border-green hover:bg-green hover:text-white cursor-pointer text-black px-4 py-1 text-xs uppercase transition-colors duration-500">
                 Reply
               </button>
             </div>
@@ -101,7 +101,7 @@ export default function CommentSection() {
             ></textarea>
             <div className="flex justify-center">
 
-            <button className="mt-6 bg-[#FFBC13] text-white px-7 py-4 text-[16px] font- uppercase font-bold tracking-[2px]">
+            <button className="mt-6 bg-green text-white px-7 py-4 text-[16px] font- uppercase font-bold tracking-[2px]">
               Submit
             </button>
             </div>

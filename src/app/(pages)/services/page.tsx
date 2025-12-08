@@ -21,7 +21,7 @@ const page = () => {
               <span className="text-white">/ Service</span>
             </p>
             <h1 className="text-[45px] text-white font-medium lg:tracking-[4px]">
-              OUR SERVICE
+              <span className="text-blue">OUR</span><span className="text-green">SERVICES</span>
             </h1>
           </div>
         </div>

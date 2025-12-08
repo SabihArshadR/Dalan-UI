@@ -11,8 +11,8 @@ const Facts = () => {
       >
         <div className="flex justify-end lg:mr-80 pt-20">
           <div className="text-white text-center">
-            <h2 className="text-[40px] font-montserrat font-bold mb-2 tracking-widest">
-              AWESOME <span className="text-[#FFBC13]">FACTS</span>
+            <h2 className="text-[40px] text-blue font-montserrat font-bold mb-2 tracking-widest">
+              AWESOME <span className="text-green">FACTS</span>
             </h2>
           </div>
         </div>

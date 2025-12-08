@@ -70,7 +70,7 @@ export default function Header() {
             <div>
               <nav className="hidden md:flex items-center space-x-10 text-white text-[13px] font-semibold">
                 <a
-                  className="text-[#FFBC14] cursor-pointer"
+                  className="text-green cursor-pointer"
                   onClick={() => router.push("/")}
                 >
                   HOME
@@ -85,7 +85,7 @@ export default function Header() {
                   onMouseEnter={() => setPagesOpen(true)}
                   onMouseLeave={() => setPagesOpen(false)}
                 >
-                  <div className="hover:text-[#FFBC14] flex items-center space-x-2">
+                  <div className="hover:text-green flex items-center space-x-2">
                     <span className="">PAGES</span>
                     <FaAngleDown className="w-[9px] h-[13px]" />
                   </div>
@@ -102,13 +102,13 @@ export default function Header() {
                 `}
                   >
                     <a
-                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      className="block px-4 py-5 hover:text-green"
                       onClick={() => router.push("/blogpage")}
                     >
                       BLOG PAGE
                     </a>
                     <a
-                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      className="block px-4 py-5 hover:text-green"
                       onClick={() => router.push("/gallery")}
                     >
                       GALLERY
@@ -120,13 +120,13 @@ export default function Header() {
                   Single Gallery
                 </a> */}
                     <a
-                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      className="block px-4 py-5 hover:text-green"
                       onClick={() => router.push("/services")}
                     >
                       SERVICES
                     </a>
                     <a
-                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      className="block px-4 py-5 hover:text-green"
                       onClick={() => router.push("/about")}
                     >
                       ABOUT PAGE
@@ -140,7 +140,7 @@ export default function Header() {
                   onMouseEnter={() => setBlogOpen(true)}
                   onMouseLeave={() => setBlogOpen(false)}
                 >
-                  <div className="flex items-center space-x-2 hover:text-[#FFBC14]">
+                  <div className="flex items-center space-x-2 hover:text-green">
                     <span className="">BLOG</span>
                     <FaAngleDown className="w-[9px] h-[13px]" />
                   </div>
@@ -155,13 +155,13 @@ export default function Header() {
                   `}
                   >
                     <a
-                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      className="block px-4 py-5 hover:text-green"
                       onClick={() => router.push("/blogpage")}
                     >
                       BLOG PAGE
                     </a>
                     <a
-                      className="block px-4 py-5 hover:text-[#FFBC14]"
+                      className="block px-4 py-5 hover:text-green"
                       onClick={() => router.push("/singleblog")}
                     >
                       SINGLE PAGE
@@ -170,13 +170,13 @@ export default function Header() {
                 </div>
 
                 <a
-                  className="hover:text-[#FFBC14] cursor-pointer"
+                  className="hover:text-green cursor-pointer"
                   onClick={() => router.push("/gallery")}
                 >
                   GALLERY
                 </a>
                 <a
-                  className="hover:text-[#FFBC14] cursor-pointer"
+                  className="hover:text-green cursor-pointer"
                   onClick={() => router.push("/contact")}
                 >
                   CONTACT
@@ -185,7 +185,7 @@ export default function Header() {
             </div>
             <div className="mr-[350px]">
               <div className="hidden md:flex items-center space-x-6 ml-[150px]  text-white">
-                <FaSearch className="cursor-pointer w-[14px] h-[15px] hover:text-[#FFBC14]" />
+                <FaSearch className="cursor-pointer w-[14px] h-[15px] hover:text-green" />
 
                 {/* <div className="relative cursor-pointer">
               <FaShoppingCart className="w-[14px] h-[15px] hover:text-[#FFBC14]" />
@@ -194,7 +194,7 @@ export default function Header() {
               </span>
               </div> */}
 
-                <FaCog className="cursor-pointer w-[13px] h-[15px] hover:text-[#FFBC14]" />
+                <FaCog className="cursor-pointer w-[13px] h-[15px] hover:text-green" />
               </div>
             </div>
           </div>

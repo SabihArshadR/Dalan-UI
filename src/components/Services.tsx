@@ -49,14 +49,14 @@ export default function Services() {
     <section className="bg-[#FBFBFB] py-10">
       <div className="container mx-auto max-w-[1320px] text-center p-2 mt-10">
         <h2 className="text-[40px] font-montserrat font-bold tracking-[4px] mb-4">
-          <span className="text-gray-700">OUR </span>
-          <span className="text-[#FFBC13]">SERVICES</span>
+          <span className="text-blue">OUR </span>
+          <span className="text-green">SERVICES</span>
         </h2>
         <div className="flex justify-center mt-4">
-          <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+          <div className="h-0.5 w-[100px] bg-blue" />
         </div>
         <div className="flex justify-center mt-1.5">
-          <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+          <div className="h-0.5 w-[40px] bg-green" />
         </div>
         <p className="text-[#6b6b6b] max-w-[648px] mx-auto mb-16 mt-5 text-sm font-roboto leading-6">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
@@ -67,10 +67,10 @@ export default function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="flex items-start gap-6 text-left text-[#FFBC13] group "
+              className="flex items-start gap-6 text-left group "
             >
               <div
-                className="bg-[#FFBC13] w-[66px] h-[64px] px-4 flex items-center justify-center
+                className="bg-green w-[66px] h-[64px] px-4 flex items-center justify-center
                text-white text-3xl transition-all duration-500 
                group-hover:rotate-[360deg]"
               >
@@ -78,7 +78,7 @@ export default function Services() {
               </div>
 
               <div>
-                <h3 className="text-[18px] font-roboto leading-6 tracking-wider font-medium mb-2 text-[#323232] group-hover:text-[#FFBC13]">
+                <h3 className="text-[18px] font-roboto leading-6 tracking-wider font-medium mb-2 text-[#323232] group-hover:text-green">
                   {service.title}
                 </h3>
                 <p className="text-[#676767] text-[15px] font-roboto leading-relaxed">

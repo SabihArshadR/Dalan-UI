@@ -49,14 +49,14 @@ export default function ClientTestimonial() {
     <div className="lg:h-[676px] bg-[#FBFBFB]">
       <section className="w-full py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-[40px] font-bold tracking-[4px] text-[#414141] font-montserrat">
-            CLIENT & <span className="text-[#FFBC13]">TESTIMONIAL</span>
+          <h2 className="text-[40px] font-bold tracking-[4px] text-blue font-montserrat">
+            CLIENT & <span className="text-green">TESTIMONIAL</span>
           </h2>
           <div className="flex justify-center mt-4">
-            <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+            <div className="h-0.5 w-[100px] bg-blue" />
           </div>
           <div className="flex justify-center mt-1.5">
-            <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+            <div className="h-0.5 w-[40px] bg-green" />
           </div>
           <p className="text-[#6b6b6b] font-roboto text-sm max-w-[648px] mx-auto mt-5">
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
@@ -95,7 +95,7 @@ export default function ClientTestimonial() {
                     {testimonials[currentTestimonial].position}
                   </p>
                 </div>
-                <span className="text-[#FFBC13] text-[70px] ml-auto mr-24">
+                <span className="text-blue text-[70px] ml-auto mr-24">
                   &#10078;
                 </span>
               </div>

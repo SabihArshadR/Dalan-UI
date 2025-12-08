@@ -49,14 +49,14 @@ export default function Gallery() {
   return (
     <section className="py-24 bg-white text-center">
       <h2 className="text-[40px] tracking-[4px] mb-4 font-montserrat">
-        <span className="text-gray-700 font-bold">OUR </span>
-        <span className="text-[#FFBC13] font-bold">GALLERY</span>
+        <span className="text-blue font-bold">OUR </span>
+        <span className="text-green font-bold">GALLERY</span>
       </h2>
       <div className="flex justify-center mt-4">
-        <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+        <div className="h-0.5 w-[100px] bg-blue" />
       </div>
       <div className="flex justify-center mt-1.5">
-        <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+        <div className="h-0.5 w-[40px] bg-green" />
       </div>
 
       <p className="text-[#6b6b6b] max-w-[648px] mx-auto mb-10 mt-5 font-roboto text-sm leading-6">
@@ -71,8 +71,8 @@ export default function Gallery() {
             className={`flex items-center gap-2 border-2 px-3 py-1.5 text-[15px] font-roboto transition hover:cursor-pointer
               ${
                 activeCategory === category
-                  ? "bg-[#FFBC13] text-white border-[#FFBC13] border"
-                  : "border-[#FFBC13] text-[#383838]"
+                  ? "bg-green text-white border-green border"
+                  : "border-green text-[#383838]"
               }`}
           >
             <span className="text-xs">■</span> {category}
@@ -94,12 +94,12 @@ export default function Gallery() {
               <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4">
                 <div className="space-y-4 text-center">
                   <div className="overflow-hidden">
-                    <span className="block transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 text-[18px] font-roboto text-[#FFBC13]">
+                    <span className="block transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 text-[18px] font-roboto text-blue">
                       BUILDINGS
                     </span>
                   </div>
                   <div className="overflow-hidden">
-                    <span className="block transform translate-x-full group-hover:translate-x-0 transition-transform duration-500 text-[15px] text-white font-roboto">
+                    <span className="block transform translate-x-full group-hover:translate-x-0 transition-transform duration-500 text-[15px] text-green font-roboto">
                       INTERIOR
                     </span>
                   </div>

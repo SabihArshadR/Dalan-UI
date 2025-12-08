@@ -63,15 +63,15 @@ export default function WhyChoose() {
     <section className="pt-20 bg-white">
       <div className="max-w-[1320px] mx-auto">
         <div className="text-center mb-10">
-          <h2 className="text-[40px] font-montserrat font-bold tracking-[4px] text-[#414141]">
-            WHY <span className="text-[#FFBC13]">CHOOSE</span>
+          <h2 className="text-[40px] font-montserrat font-bold tracking-[4px] text-blue">
+            WHY <span className="text-green">CHOOSE</span>
           </h2>
 
           <div className="flex justify-center mt-4">
-            <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+            <div className="h-0.5 w-[100px] bg-blue" />
           </div>
           <div className="flex justify-center mt-1.5">
-            <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+            <div className="h-0.5 w-[40px] bg-green" />
           </div>
 
           <p className="lg:max-w-[648px] text-sm font-roboto mx-auto text-[#6b6b6b] mt-5 leading-6">
@@ -88,7 +88,7 @@ export default function WhyChoose() {
                 <button
                   className={`w-full text-left lg:px-4 h-[44px] flex items-center transition text-[20px] font-extralight ${
                     openIndex === index
-                      ? "bg-[#FFBC13] text-white font-montserrat"
+                      ? "bg-green text-white font-montserrat"
                       : "bg-[#F8F8F8] text-black"
                   }`}
                   onClick={() =>

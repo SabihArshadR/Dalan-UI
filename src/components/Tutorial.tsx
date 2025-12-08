@@ -11,7 +11,7 @@ const Tutorial = () => {
                 <div className="text-white text-center">
                   <div className='flex justify-center'>
 
-                  <FaCirclePlay className="w-[60px] h-[60px] text-[#FFBC13]"/>
+                  <FaCirclePlay className="w-[60px] h-[60px] text-green"/>
                   </div>
                   <h2 className="text-[33px] font-montserrat font-bold tracking-widest mt-5">
                     WATCH OUR VIDEO TUTORIAL

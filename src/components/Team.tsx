@@ -47,14 +47,14 @@ export default function TeamMember() {
   return (
     <section className="w-full bg-[#FBFBFB] py-20">
       <div className="max-w-[1320px] mx-auto text-center px-4">
-        <h2 className="text-[40px] font-montserrat font-bold tracking-[5px] text-[#414141]">
-          TEAM <span className="text-[#FFBC13]">MEMBER</span>
+        <h2 className="text-[40px] font-montserrat font-bold tracking-[5px] text-blue">
+          TEAM <span className="text-green">MEMBER</span>
         </h2>
         <div className="flex justify-center mt-4">
-          <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+          <div className="h-0.5 w-[100px] bg-blue" />
         </div>
         <div className="flex justify-center mt-1.5">
-          <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+          <div className="h-0.5 w-[40px] bg-green" />
         </div>
         <p className="text-[#6b6b6b] font-roboto text-sm max-w-2xl mx-auto mt-4 leading-6">
           Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
@@ -105,14 +105,14 @@ export default function TeamMember() {
       </div>
       <div className="mt-20 bg-white">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-[40px] font-bold tracking-[5px] text-[#414141] font-montserrat pt-20">
-            OUR <span className="text-[#FFBC13]">TESTIMONIAL</span>
+          <h2 className="text-[40px] font-bold tracking-[5px] text-blue font-montserrat pt-20">
+            OUR <span className="text-green">TESTIMONIAL</span>
           </h2>
           <div className="flex justify-center mt-4">
-            <div className="h-0.5 w-[100px] bg-[#FFBC13]" />
+            <div className="h-0.5 w-[100px] bg-blue" />
           </div>
           <div className="flex justify-center mt-1.5">
-            <div className="h-0.5 w-[40px] bg-[#FFBC13]" />
+            <div className="h-0.5 w-[40px] bg-green" />
           </div>
           <p className="text-[#6b6b6b] font-roboto text-sm max-w-[648px] mx-auto mt-5">
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
@@ -151,7 +151,7 @@ export default function TeamMember() {
                   {testimonials[currentTestimonial].position}
                 </p>
               </div>
-              <span className="text-[#FFBC13] text-[80px] ml-auto mr-[120px]">
+              <span className="text-blue text-[80px] ml-auto mr-[120px]">
                 &#10078;
               </span>
             </div>

@@ -12,8 +12,8 @@ const Welcome = () => {
         </div>
         <div className="">
           <h1 className="text-[40px] font-montserrat lg:tracking-[5px] leading-[1.2] font-bold text-black mx-2">
-            <span className="text-[#414141]">WELCOME TO</span>
-            <span className="text-[#FFBC13]">
+            <span className="text-blue">WELCOME TO</span>
+            <span className="text-green">
               {""} DALAN <br></br> CONSTRUCTION
             </span>
           </h1>
