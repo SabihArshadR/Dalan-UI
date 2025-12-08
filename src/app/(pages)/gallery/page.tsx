@@ -8,9 +8,9 @@ const page = () => {
     <div>
       <Header />
       <div className="mt-16">
-        <div className="relative h-[550px] font-roboto">
+        <div className="relative h-[550px] bg-black font-roboto">
           <div
-            className="absolute inset-0 bg-[url('/image1.jpeg')] opacity-50 bg-no-repeat bg-cover"
+            className="absolute inset-0 bg-[url('/image1.jpeg')] opacity-20 bg-no-repeat bg-cover"
             style={{ backgroundPosition: "50% 65%" }}
           ></div>
           <div className="absolute top-[350px] lg:left-[300px] transform -translate-y-1/2">
@@ -18,7 +18,7 @@ const page = () => {
               <span className="text-white">Home </span>
               <span className="text-white">/ Gallery</span>
             </p>
-            <h1 className="text-[45px] text-black font-medium lg:tracking-[4px]">
+            <h1 className="text-[45px] text-white font-medium lg:tracking-[4px]">
               OUR GALLERY
             </h1>
           </div>

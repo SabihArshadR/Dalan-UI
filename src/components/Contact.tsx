@@ -3,9 +3,9 @@ import React from "react";
 export default function Contact() {
   return (
     <div>
-      <div className="relative h-[600px]">
+      <div className="relative h-[600px] bg-black">
         <div
-          className="absolute inset-0 bg-[url('/image1.jpeg')] opacity-50 bg-no-repeat bg-cover"
+          className="absolute inset-0 bg-[url('/image1.jpeg')] opacity-20 bg-no-repeat bg-cover"
           style={{ backgroundPosition: "50% 45%" }}
         ></div>
         <div className="absolute top-[350px] lg:left-[300px]">
@@ -13,7 +13,7 @@ export default function Contact() {
             <span className="text-white">Home </span>
             <span className="text-white">/ Contact</span>
           </p>
-          <h1 className="text-[45px] font-roboto text-black tracking-[2px] font-semibold">
+          <h1 className="text-[45px] font-roboto text-white tracking-[2px] font-semibold">
             CONTACT US
           </h1>
         </div>

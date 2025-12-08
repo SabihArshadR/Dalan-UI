@@ -86,15 +86,15 @@ export default function BlogPage() {
   const prevPage = () => currentPage > 1 && setCurrentPage((prev) => prev - 1);
 
   return (
-    <section className="bg-white pb-20">
-      <div className="relative h-[600px] font-roboto">
-        <div className="absolute inset-0 bg-[url('/image1.jpeg')] bg-no-repeat bg-cover"></div>
+    <section className=" pb-20 bg-white">
+      <div className="relative h-[600px] font-roboto bg-black">
+        <div className="absolute inset-0 bg-[url('/image1.jpeg')] opacity-20 bg-no-repeat bg-cover"></div>
         <div className="absolute top-[400px] lg:left-[300px] transform -translate-y-1/2">
           <p className="text-[14px] tracking-[5px] font-bold">
-            <span className="text-[#605B5B]">Home </span>
-            <span className="text-[#6E6E6E]">/ BLOG</span>
+            <span className="text-white">Home </span>
+            <span className="text-white">/ BLOG</span>
           </p>
-          <h1 className="text-[45px] text-[#333333] font-medium lg:tracking-[4px]">
+          <h1 className="text-[45px] text-white font-medium lg:tracking-[4px]">
             LATEST NEWS
           </h1>
         </div>
