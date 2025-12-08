@@ -91,7 +91,7 @@ export default function Hero() {
         `}</style>
 
         <div
-          className={`absolute text-white lg:right-[280px] lg:top-[300px] transition-all duration-300 ${
+          className={`absolute text-white lg:right-[280px] md:pl-0 pl-5 lg:top-[300px] transition-all duration-300 ${
             animateText ? "opacity-100" : "opacity-0"
           }`}
           style={{

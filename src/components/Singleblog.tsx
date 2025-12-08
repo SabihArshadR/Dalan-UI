@@ -41,7 +41,7 @@ export default function CommentSection() {
           {[1, 2].map((_, index) => (
             <div
               key={index}
-              className="border-2 border-[#F9F9F9] p-10 mb-10 text-center w-[896px]"
+              className="border-2 border-[#F9F9F9] p-10 mb-10 text-center max-w-[896px] mx-auto"
             >
               <div className="flex justify-center mb-4">
                 <div className="relative h-20 w-20">

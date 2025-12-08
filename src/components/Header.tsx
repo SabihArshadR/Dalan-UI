@@ -58,11 +58,15 @@ export default function Header() {
     [clip-path:polygon(0_0,85%_0,100%_100%,0_100%)]"
         >
           <div className="flex lg:justify-end">
-            <Image src={Logo} alt="logo" className="mr-44 object-cover h-[70px] w-[110px]" />
+            <Image
+              src={Logo}
+              alt="logo"
+              className="mr-44 object-cover h-[70px] w-[110px]"
+            />
           </div>
         </div>
 
-        <div className="relative h-[72px] flex items-center ml-[400px] gap-64 font-[10px] font-roboto tracking-[1px] leading-px">
+        <div className="relative h-[72px] flex items-center lg:ml-[400px] gap-64 font-[10px] font-roboto tracking-[1px] leading-px">
           <div className="flex items-center space-x-3 z-10">
             <div className="-ml-1"></div>
           </div>
@@ -183,8 +187,8 @@ export default function Header() {
                 </a>
               </nav>
             </div>
-            <div className="mr-[350px]">
-              <div className="hidden md:flex items-center space-x-6 ml-[150px]  text-white">
+            <div className="lg:mr-[350px]">
+              <div className="hidden md:flex items-center space-x-6 lg:ml-[150px] text-white">
                 <FaSearch className="cursor-pointer w-[14px] h-[15px] hover:text-green" />
 
                 {/* <div className="relative cursor-pointer">
@@ -197,20 +201,20 @@ export default function Header() {
                 <FaCog className="cursor-pointer w-[13px] h-[15px] hover:text-green" />
               </div>
             </div>
+            <button
+              onClick={() => setOpen(!open)}
+              className="lg:hidden mr-5 text-2xl flex text-black"
+            >
+              ☰
+            </button>
           </div>
-          <button
-            onClick={() => setOpen(!open)}
-            className="lg:hidden text-white text-2xl"
-          >
-            ☰
-          </button>
         </div>
 
         {open && (
           <div className="md:hidden bg-[#262626] flex flex-col text-white px-6 py-4 space-y-4 border-t border-gray-700">
             <a onClick={() => router.push("/")}>HOME </a>
             {/* <a>E-SHOP </a> */}
-            <a>PAGES </a>
+            {/* <a>PAGES </a> */}
             <a onClick={() => router.push("/blogpage")}>BLOG </a>
             <a onClick={() => router.push("/gallery")}>GALLERY </a>
             <a onClick={() => router.push("/contact")}>CONTACT </a>

@@ -8,7 +8,7 @@ export default function Contact() {
           className="absolute inset-0 bg-[url('/image1.jpeg')] opacity-20 bg-no-repeat bg-cover"
           style={{ backgroundPosition: "50% 45%" }}
         ></div>
-        <div className="absolute top-[350px] lg:left-[300px]">
+        <div className="absolute top-[350px] lg:left-[300px] lg:ml-0 pl-5">
           <p className="text-sm font-roboto font-bold tracking-[5px]">
             <span className="text-white">Home </span>
             <span className="text-white">/ Contact</span>

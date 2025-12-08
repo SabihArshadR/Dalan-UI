@@ -89,13 +89,14 @@ export default function BlogPage() {
     <section className=" pb-20 bg-white">
       <div className="relative h-[600px] font-roboto bg-black">
         <div className="absolute inset-0 bg-[url('/image1.jpeg')] opacity-20 bg-no-repeat bg-cover"></div>
-        <div className="absolute top-[400px] lg:left-[300px] transform -translate-y-1/2">
+        <div className="absolute top-[400px] lg:left-[300px] lg:pl-0 pl-5 transform -translate-y-1/2">
           <p className="text-[14px] tracking-[5px] font-bold">
             <span className="text-white">Home </span>
             <span className="text-white">/ BLOG</span>
           </p>
           <h1 className="text-[45px] text-white font-medium lg:tracking-[4px]">
-          <span className="text-blue">LATEST</span> <span className="text-green">NEWS</span>
+            <span className="text-blue">LATEST</span>{" "}
+            <span className="text-green">NEWS</span>
           </h1>
         </div>
       </div>
@@ -259,7 +260,7 @@ export default function BlogPage() {
               INSTAGRAM
             </h3>
 
-            <div className="flex gap-2">
+            <div className="flex w-full gap-2">
               <div>
                 <div className="relative w-[145px] h-[116px] mb-2">
                   <Image src={Post3} alt="" fill className="object-cover " />

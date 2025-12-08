@@ -13,13 +13,13 @@ const page = () => {
             className="absolute inset-0 bg-[url('/image1.jpeg')] opacity-20 bg-no-repeat bg-cover"
             style={{ backgroundPosition: "50% 65%" }}
           ></div>
-          <div className="absolute top-[350px] lg:left-[300px] transform -translate-y-1/2">
+          <div className="absolute top-[350px] lg:left-[300px] lg:pl-0 pl-5 transform -translate-y-1/2">
             <p className="text-[14px] tracking-[5px] font-bold">
               <span className="text-white">Home </span>
               <span className="text-white">/ Gallery</span>
             </p>
             <h1 className="text-[45px] text-white font-medium lg:tracking-[4px]">
-              <span className="text-blue">OUR</span> <span className="text-green">GALLERY</span> 
+              <span className="text-blue">OUR </span> <span className="text-green">GALLERY</span> 
             </h1>
           </div>
         </div>
