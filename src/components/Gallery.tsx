@@ -1,14 +1,14 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import work1 from "@/assets/work-1.jpg";
-import work2 from "@/assets/work-2.jpg";
-import work3 from "@/assets/work-3.jpg";
-import work4 from "@/assets/work-4.jpg";
-import work5 from "@/assets/work-5.jpg";
-import work6 from "@/assets/work-6.jpg";
-import work7 from "@/assets/work-7.jpg";
-import work8 from "@/assets/work-8.jpg";
+import work1 from "../../public/image2.jpeg";
+import work2 from "../../public/image3.jpeg";
+import work3 from "../../public/image4.jpeg";
+import work4 from "../../public/image5.jpeg";
+import work5 from "../../public/image6.jpeg";
+import work6 from "../../public/image10.jpeg";
+// import work7 from "../../public/image11.jpeg";
+// import work8 from "../../public/image10.jpeg";
 
 type WorkItem = {
   id: number;
@@ -31,14 +31,14 @@ export default function Gallery() {
     { id: 2, image: work2, category: "Building" },
     { id: 3, image: work3, category: "Building" },
     { id: 4, image: work4, category: "Garden" },
-    { id: 5, image: work5, category: "Building" },
-    { id: 6, image: work6, category: "Building" },
-    { id: 7, image: work7, category: "Building" },
-    { id: 8, image: work8, category: "Construction" },
-    { id: 9, image: work5, category: "Building" },
-    { id: 10, image: work6, category: "Building" },
-    { id: 11, image: work1, category: "Building" },
-    { id: 12, image: work8, category: "Construction" },
+    { id: 5, image: work2, category: "Building" },
+    { id: 6, image: work4, category: "Building" },
+    { id: 7, image: work1, category: "Building" },
+    { id: 8, image: work2, category: "Construction" },
+    { id: 9, image: work4, category: "Building" },
+    { id: 10, image: work3, category: "Building" },
+    { id: 11, image: work2, category: "Building" },
+    { id: 12, image: work1, category: "Construction" },
   ];
 
   const filteredWorks =

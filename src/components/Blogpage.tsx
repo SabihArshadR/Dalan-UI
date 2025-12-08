@@ -2,12 +2,12 @@
 
 import Image from "next/image";
 import { useState, useMemo } from "react";
-import Post1 from "@/assets/post1.jpg";
-import Post2 from "@/assets/post2.jpg";
-import Post3 from "@/assets/ins1.jpg";
-import Post4 from "@/assets/ins2.jpg";
-import Post5 from "@/assets/ins3.jpg";
-import Post6 from "@/assets/ins4.jpg";
+import Post1 from "../../public/image7.jpeg";
+import Post2 from "../../public/image8.jpeg";
+import Post3 from "../../public/image6.jpeg";
+import Post4 from "../../public/image5.jpeg";
+import Post5 from "../../public/image3.jpeg";
+import Post6 from "../../public/image2.jpeg";
 
 // Sample blog posts data
 const blogPosts = [
@@ -88,7 +88,7 @@ export default function BlogPage() {
   return (
     <section className="bg-white pb-20">
       <div className="relative h-[600px] font-roboto">
-        <div className="absolute inset-0 bg-[url('/page_bg.jpg')] bg-no-repeat bg-cover"></div>
+        <div className="absolute inset-0 bg-[url('/image1.jpeg')] bg-no-repeat bg-cover"></div>
         <div className="absolute top-[400px] lg:left-[300px] transform -translate-y-1/2">
           <p className="text-[14px] tracking-[5px] font-bold">
             <span className="text-[#605B5B]">Home </span>

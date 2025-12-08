@@ -1,13 +1,14 @@
 import React from 'react'
 import Image from "next/image";
-import Image1 from "@/assets/about.jpg";
+// import Image1 from "@/assets/about.jpg";
+import Image1 from "../../public/image9.jpeg";
 
 const Welcome = () => {
   return (
     <div>
       <div className="lg:flex gap-10 justify-center bg-white pt-10 pb-[100px]">
         <div>
-          <Image src={Image1} alt="About" />
+          <Image src={Image1} alt="About" className='w-[636px] h-[455px]'/>
         </div>
         <div className="">
           <h1 className="text-[40px] font-montserrat lg:tracking-[5px] leading-[1.2] font-bold text-black mx-2">

@@ -9,7 +9,7 @@ export default function Hero() {
   const [nextSlide, setNextSlide] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [animateText, setAnimateText] = useState(false);
-  const slides = ["/slider1.jpg", "/slider2.jpg"];
+  const slides = ["/image1.jpeg", "/image11.jpeg"];
   const totalSlides = slides.length;
 
   useEffect(() => {
@@ -34,7 +34,7 @@ export default function Hero() {
       <section className="relative h-[750px] flex items-center overflow-hidden">
         <div
           key={`current-${currentSlide}`}
-          className={`absolute inset-0 transition-transform duration-1000 ${
+          className={`absolute inset-0 opacity-40 transition-transform duration-1000 ${
             isTransitioning ? "-translate-x-full" : "translate-x-0"
           }`}
           style={{
@@ -52,7 +52,7 @@ export default function Hero() {
         {isTransitioning && (
           <div
             key={`next-${nextSlide}`}
-            className="absolute inset-0 transition-transform duration-1000 translate-x-0"
+            className="absolute inset-0 opacity-40 transition-transform duration-1000 translate-x-0"
             style={{
               backgroundImage: `url('${slides[nextSlide]}')`,
               backgroundSize: "cover",
@@ -102,7 +102,7 @@ export default function Hero() {
             DALAN CONSTRUCTION
           </h1>
           <h1 className="text-[44px] font-bold font-montserrat">
-            <span className="text-[#2F3320]">BUILD</span>{" "}
+            <span className="text-black">BUILD</span>{" "}
             <span className="text-[#FFBC13]">EVERYTHING</span>
           </h1>
           <p className="text-sm max-w-[636px] font-roboto">

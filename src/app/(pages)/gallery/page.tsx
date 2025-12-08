@@ -10,15 +10,15 @@ const page = () => {
       <div className="mt-16">
         <div className="relative h-[550px] font-roboto">
           <div
-            className="absolute inset-0 bg-[url('/page_bg.jpg')] bg-no-repeat bg-cover"
+            className="absolute inset-0 bg-[url('/image1.jpeg')] opacity-50 bg-no-repeat bg-cover"
             style={{ backgroundPosition: "50% 65%" }}
           ></div>
           <div className="absolute top-[350px] lg:left-[300px] transform -translate-y-1/2">
             <p className="text-[14px] tracking-[5px] font-bold">
-              <span className="text-[#605B5B]">Home </span>
-              <span className="text-[#6E6E6E]">/ Gallery</span>
+              <span className="text-white">Home </span>
+              <span className="text-white">/ Gallery</span>
             </p>
-            <h1 className="text-[45px] text-[#333333] font-medium lg:tracking-[4px]">
+            <h1 className="text-[45px] text-black font-medium lg:tracking-[4px]">
               OUR GALLERY
             </h1>
           </div>

@@ -1,7 +1,12 @@
 import Image from "next/image";
-import Offer1 from "@/assets/offer1.jpg";
-import Offer2 from "@/assets/offer2.jpg";
-import Offer3 from "@/assets/offer3.jpg";
+// import Offer1 from "@/assets/offer1.jpg";
+// import Offer2 from "@/assets/offer2.jpg";
+// import Offer3 from "@/assets/offer3.jpg";
+
+import Offer1 from "../../public/image2.jpeg";
+import Offer2 from "../../public/image3.jpeg";
+import Offer3 from "../../public/image4.jpeg";
+
 
 export default function Projects() {
   const offers = [

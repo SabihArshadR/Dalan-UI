@@ -14,7 +14,7 @@ import {
   FaArrowDown,
 } from "react-icons/fa";
 import Image from "next/image";
-import Logo from "@/assets/logoheader.png";
+import Logo from "../../public/logo.png";
 import { useRouter } from "next/navigation";
 import { FaAngleDown } from "react-icons/fa6";
 
@@ -51,14 +51,14 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <div className="w-full bg-[#262424] relative border-b border-[#FFBC13]">
+      <div className="w-full bg-[#262424] relative border-b border-white">
         {/* <div className="absolute left-0 top-0 bottom-0 w-[550px] bg-[#FFBC13] skew-x-45"></div> */}
         <div
-          className="absolute left-0 top-0 bottom-0 w-[600px] h-[73px] bg-[#FFBC13]
+          className="absolute left-0 top-0 bottom-0 w-[600px] h-[73px] bg-white
     [clip-path:polygon(0_0,85%_0,100%_100%,0_100%)]"
         >
           <div className="flex lg:justify-end">
-            <Image src={Logo} alt="logo" className="mr-36" />
+            <Image src={Logo} alt="logo" className="mr-44 object-cover h-[70px] w-[110px]" />
           </div>
         </div>
 
