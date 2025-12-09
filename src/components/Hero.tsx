@@ -31,7 +31,7 @@ export default function Hero() {
   }, [currentSlide, totalSlides]);
   return (
     <div>
-      <section className="relative bg-black h-[750px] flex items-center overflow-hidden">
+      <section className="relative bg-black h-[750px] mt-[75px] flex items-center overflow-hidden">
         <div
           key={`current-${currentSlide}`}
           className={`absolute inset-0 opacity-20 transition-transform duration-1000 ${

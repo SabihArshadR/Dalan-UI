@@ -54,19 +54,19 @@ export default function Header() {
       <div className="w-full bg-[#262424] relative border-b border-white">
         {/* <div className="absolute left-0 top-0 bottom-0 w-[550px] bg-[#FFBC13] skew-x-45"></div> */}
         <div
-          className="absolute left-0 top-0 bottom-0 w-[600px] h-[73px] bg-white
+          className="absolute left-0 top-0 bottom-0 w-[600px] h-[150px] bg-white
     [clip-path:polygon(0_0,85%_0,100%_100%,0_100%)]"
         >
           <div className="flex lg:justify-end">
             <Image
               src={Logo}
               alt="logo"
-              className="mr-44 object-cover h-[70px] w-[110px]"
+              className="lg:mr-[105px] object-contain h-[250px] lg:w-[250px] w-[180px] translate-y-[-53px]"
             />
           </div>
         </div>
 
-        <div className="relative h-[72px] flex items-center lg:ml-[400px] gap-64 font-[10px] font-roboto tracking-[1px] leading-px">
+        <div className="relative h-[149px] flex items-center lg:ml-[400px] gap-64 font-[10px] font-roboto tracking-[1px] leading-px">
           <div className="flex items-center space-x-3 z-10">
             <div className="-ml-1"></div>
           </div>
