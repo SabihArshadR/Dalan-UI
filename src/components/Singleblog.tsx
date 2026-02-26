@@ -54,18 +54,14 @@ export default function CommentSection() {
                 </div>
               </div>
 
-              <h3 className="tracking-[3px] text-black font-roboto text-[13px]">JOHN DOE</h3>
+              <h3 className="tracking-[3px] text-black font-roboto text-[13px]">{index === 0 ? "EPC Client" : "Oil & Gas Partner"}</h3>
 
               <p className="text-gray-500 text-xs mt-1">
                 {index === 0 ? "27 JAN 2015" : "27 JUNE 2016"}
               </p>
 
               <p className="text-[#676767] font-roboto mt-4 leading-6 text-sm max-w-[832px] mx-auto">
-                Lorem ipsum dolor sit amet, in urna molestie tristique. A
-                fermentum sed at, facilisis facilisis lacinia aliquam fusce
-                volutpat, porta ligula nibh vel congue diam. Sed ligula erat
-                molestie cras montes in, facilisis eu elit, ac suscipit
-                pellentesque, praesent fringilla sit amet in suspendisse.
+                JES delivered on schedule with strict adherence to HSE and quality. Their one-point EPCC approach simplified coordination and reduced interface issues. We would engage them again for oil and gas projects.
               </p>
 
               <button className="mt-5 border border-green hover:bg-green hover:text-white cursor-pointer text-black px-4 py-1 text-xs uppercase transition-colors duration-500">

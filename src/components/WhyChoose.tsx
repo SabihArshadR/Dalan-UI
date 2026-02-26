@@ -1,8 +1,7 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Image from "next/image";
-import Workers from "@/assets/choose.jpg";
 
 export default function WhyChoose() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -31,29 +30,29 @@ export default function WhyChoose() {
   };
   const items = [
     {
-      title: "100% CUSTOMERS SUPPORT",
+      title: "QUALITY & HSE",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
+        "We maintain the highest standards of quality and Health, Safety & Environment across all projects. Our commitment to zero harm and technical robustness ensures reliable delivery for every client.",
     },
     {
-      title: "HIGH QUALITY STANDARTS",
+      title: "ONE-POINT CONTROL",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
+        "Turnkey solutions with single-point responsibility for civil, mechanical, and E&I services. Streamlined project delivery from engineering through commissioning reduces interface risk and schedule.",
     },
     {
-      title: "WE HAVE REASONABLE PRICES",
+      title: "TECHNICALLY ROBUST SOLUTIONS",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
+        "Commercially viable and technically sound solutions for both brownfield and greenfield industrial developments. Our engineering and execution teams ensure fit-for-purpose design and build.",
     },
     {
-      title: "WE ARE RELIABLE COMPANY",
+      title: "TRUSTED PARTNER",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
+        "Established in 2009, JES has built a reputation as a trusted partner in Pakistan and Qatar for oil and gas industrial development. Client satisfaction and long-term relationships are at our core.",
     },
     {
-      title: "HIGH QUALITY STANDARTS",
+      title: "DEDICATED TEAM",
       content:
-        "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur",
+        "A culture of teamwork and a dedicated team of experts across engineering disciplines, project management, and HSE. We invest in our people to deliver excellence on every project.",
     },
   ];
 
@@ -75,9 +74,7 @@ export default function WhyChoose() {
           </div>
 
           <p className="lg:max-w-[648px] text-sm font-roboto mx-auto text-[#6b6b6b] mt-5 leading-6">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
-            lectus quis dui euismod con placerat massa nec elit egestas
-            efficitur.
+            From our headquarters in Karachi and presence in Lahore, Islamabad, and Sadiqabad, we bring experience, resources, and a commitment to excellence to every project.
           </p>
         </div>
 
@@ -123,12 +120,13 @@ export default function WhyChoose() {
                 ? `translate(${mousePosition.x}px, ${mousePosition.y}px)`
                 : "translate(0, 0)",
             }}
-            // transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative;
           >
             <Image
-              src={Workers}
-              alt="Workers"
-              className="object-contain h-[542px] w-[611px]"
+              src="/jes/image17.jpeg"
+              alt="JES — Quality, HSE and project excellence"
+              width={611}
+              height={542}
+              className="object-cover h-[542px] w-full max-w-[611px] rounded-sm"
             />
           </div>
         </div>

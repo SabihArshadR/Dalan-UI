@@ -3,27 +3,26 @@ import Image from "next/image";
 // import Offer2 from "@/assets/offer2.jpg";
 // import Offer3 from "@/assets/offer3.jpg";
 
-import Offer1 from "../../public/image2.jpeg";
-import Offer2 from "../../public/image3.jpeg";
-import Offer3 from "../../public/image4.jpeg";
-
+import Offer1 from "../../public/jes/image6.png";
+import Offer2 from "../../public/jes/image7.png";
+import Offer3 from "../../public/image2.jpeg";
 
 export default function Projects() {
   const offers = [
     {
       img: Offer1,
-      title: "SECURITY PROTECTION",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
+      title: "GAS PROCESSING & PLANTS",
+      desc: "Construction and commissioning of central gas processing facilities and fertilizer plants. Full EPCC delivery with one-point control for civil, mechanical, and E&I.",
     },
     {
       img: Offer2,
-      title: "BRAND IDENTITY",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
+      title: "INDUSTRIAL EPCC",
+      desc: "Turnkey engineering, procurement, construction, and commissioning for oil, gas, and chemical process industries from wellheads to hydrocarbon sales points.",
     },
     {
       img: Offer3,
-      title: "BUSINESS STRATEGY",
-      desc: "Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id lectus quis dui euismod con placerat massa nec elit egestas efficitur.",
+      title: "PIPELINES & STORAGE",
+      desc: "Cross-country pipelines for oil and gas transportation, and construction of oil and chemical storage tanks for efficient and safe operations.",
     },
   ];
 
@@ -43,8 +42,7 @@ export default function Projects() {
         </div>
 
         <p className="text-center max-w-[648px] mx-auto mb-12 text-[#6B6B6B] text-sm font-roboto mt-5 leading-6">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
-          lectus quis dui euismod con placerat massa nec elit egestas efficitur.
+          From gas plants and pipelines to storage tanks and industrial buildings, we deliver technically robust and commercially viable solutions across brownfield and greenfield projects.
         </p>
 
         <div className="grid lg:not-first:max-w-[1320px] mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-8">

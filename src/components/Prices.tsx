@@ -10,8 +10,7 @@ export default function Prices() {
         <div className="w-10 h-0.5 bg-green mx-auto mt-2"></div>
 
         <p className="text-[#6B6B6B] leading-6 max-w-[648px] mx-auto text-sm mt-5">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
-          lectus quis dui euismod con placerat massa nec elit egestas efficitur.
+          JES provides tailored EPCC solutions for each project. Contact us for a quote based on your scope and requirements.
         </p>
       </div>
 

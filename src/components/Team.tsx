@@ -6,26 +6,25 @@ import Team1 from "@/assets/1.jpg";
 import Team2 from "@/assets/2.jpg";
 import Team3 from "@/assets/3.jpg";
 import Team4 from "@/assets/4.jpg";
-import Avatar from "@/assets/tes1.jpg";
 
 const testimonials = [
   {
-    text: "Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue reformidans atomorum his id, pri te hinc expetenda. Est an mundi tollit iuvaret. An ius postulant reformidans. Vel an elit ludus fabellas, ex quando adipisci accommodare usuet verar noluisse eum diam",
-    name: "JOHN WATSON",
-    position: "CEO At Google",
-    avatar: Avatar,
+    text: "JES delivered our gas processing facility on schedule with strict adherence to HSE and quality. Their one-point EPCC approach simplified coordination. A reliable partner for oil and gas projects.",
+    name: "EnerServe",
+    position: "Oil & Gas — Project Partner",
+    image: "/clients/Picture1.jpg",
   },
   {
-    text: "Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue reformidans atomorum his id, pri te hinc expetenda. Est an mundi tollit iuvaret. An ius postulant reformidans. Vel an elit ludus fabellas, ex quando adipisci accommodare usuet verar noluisse eum diam",
-    name: "JANE SMITH",
-    position: "Marketing Director",
-    avatar: Team1,
+    text: "From engineering through commissioning, the team demonstrated technical expertise and a strong commitment to safety. We would engage JES again for industrial projects.",
+    name: "Upstream Operator",
+    position: "Energy Sector",
+    image: "/clients/Picture2.jpg",
   },
   {
-    text: "Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue reformidans atomorum his id, pri te hinc expetenda. Est an mundi tollit iuvaret. An ius postulant reformidans. Vel an elit ludus fabellas, ex quando adipisci accommodare usuet verar noluisse eum diam",
-    name: "MICHAEL JOHNSON",
-    position: "Project Manager",
-    avatar: Team2,
+    text: "Their turnkey approach and dedicated project management made a real difference. Quality of fabrication and installation met international standards.",
+    name: "EPC Client",
+    position: "Petrochemicals & Process",
+    image: "/clients/Picture3.jpg",
   },
 ];
 
@@ -57,8 +56,7 @@ export default function TeamMember() {
           <div className="h-0.5 w-[40px] bg-green" />
         </div>
         <p className="text-[#6b6b6b] font-roboto text-sm max-w-2xl mx-auto mt-4 leading-6">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
-          lectus quis dui euismod con placerat massa nec elit egestas efficitur.
+          Our dedicated experts across engineering, project management, and HSE drive excellence on every project.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-16">
@@ -115,9 +113,7 @@ export default function TeamMember() {
             <div className="h-0.5 w-[40px] bg-green" />
           </div>
           <p className="text-[#6b6b6b] font-roboto text-sm max-w-[648px] mx-auto mt-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
-            lectus quis dui euismod con placerat massa nec elit egestas
-            efficitur.
+            What our clients say about working with JES — trusted by leading players in oil & gas and process industries.
           </p>
         </div>
         <div className="relative overflow-hidden">
@@ -134,10 +130,10 @@ export default function TeamMember() {
               </p>
             </div>
             <div className="lg:max-w-[856px] mx-auto flex items-center bg-white gap-4 mt-6">
-              <div className="w-20 h-20 rounded-full overflow-hidden">
+              <div className="w-20 h-20 overflow-hidden border border-[#e5e5e5] relative">
                 <Image
-                  src={testimonials[currentTestimonial].avatar}
-                  alt="Profile"
+                  src={testimonials[currentTestimonial].image}
+                  alt={testimonials[currentTestimonial].name}
                   width={80}
                   height={80}
                   className="object-cover w-20 h-20"

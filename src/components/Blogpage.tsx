@@ -9,61 +9,61 @@ import Post4 from "../../public/image5.jpeg";
 import Post5 from "../../public/image3.jpeg";
 import Post6 from "../../public/image2.jpeg";
 
-// Sample blog posts data
+// Blog posts — JES and EPCC updates
 const blogPosts = [
   {
     id: 1,
-    title: "This is full width blog post",
-    author: "Adam Turcotte",
-    date: "28 / Feb , 2017",
+    title: "EPCC delivery: one-point control for oil and gas projects",
+    author: "JES Team",
+    date: "28 / Feb , 2025",
     comments: 4,
     image: Post1,
     excerpt:
-      "Lorem ipsum dolor sit amet, in urna molestie tristique.Cong erment sed at facilisis lacinia aliquam fusce wisi, porta ligula nibh vel congue diam. Sed ligula erat molestie cras morbi in facilisis eu elit Lorem ipsum dolor sit amet, in urna molestie tristique.Cong erment sed at facilisis lacinia aliquam fusce wisi, porta ligula nibh vel congue diam. Sed ligula erat molestie cras morbi in in urna molestie tristique.Cong erment sed at facilisis lacinia aliquam fusce wisi",
+      "JES delivers turnkey EPCC solutions with single-point responsibility for civil, mechanical, and E&I. Streamlined project delivery from engineering through commissioning reduces interface risk and supports on-time completion for gas plants, pipelines, and industrial facilities.",
     fullHeight: true,
   },
   {
     id: 2,
-    title: "This is full width blog post",
-    author: "Adam Turcotte",
-    date: "28 / Feb , 2017",
-    comments: 4,
+    title: "Quality and HSE at the heart of every project",
+    author: "JES Team",
+    date: "20 / Feb , 2025",
+    comments: 3,
     image: Post2,
     excerpt:
-      "Lorem ipsum dolor sit amet, in urna molestie tristique.Cong erment sed at facilisis lacinia aliquam fusce wisi, porta ligula nibh vel congue diam. Sed ligula erat molestie cras morbi in facilisis eu elit Lorem ipsum dolor sit amet, in urna molestie tristique.Cong erment sed at facilisis lacinia aliquam fusce wisi, porta ligula nibh vel congue diam. Sed ligula erat molestie cras morbi in in urna molestie tristique.Cong erment sed at facilisis lacinia aliquam fusce wisi",
+      "We maintain the highest standards of quality and Health, Safety & Environment across all projects. Our commitment to zero harm and technically robust solutions ensures reliable delivery for clients in Pakistan, Qatar, and the wider region.",
     fullHeight: false,
   },
   {
     id: 3,
-    title: "Third Blog Post",
-    author: "John Doe",
-    date: "15 / Mar , 2017",
-    comments: 8,
+    title: "Gas processing and fertilizer plants: construction and commissioning",
+    author: "JES Team",
+    date: "15 / Mar , 2025",
+    comments: 6,
     image: Post1,
     excerpt:
-      "This is the third blog post. It demonstrates how the pagination works with multiple posts. Morbi in in urna molestie tristique. Cong erment sed at facilisis lacinia aliquam fusce wisi.",
+      "JES has extensive experience in the construction and commissioning of central gas processing facilities and fertilizer plants. From wellheads to hydrocarbon sales points, we support industrial development in oil and gas.",
     fullHeight: true,
   },
   {
     id: 4,
-    title: "Fourth Blog Post",
-    author: "Jane Smith",
-    date: "22 / Mar , 2017",
-    comments: 5,
+    title: "Cross-country pipelines and storage tanks",
+    author: "JES Team",
+    date: "10 / Mar , 2025",
+    comments: 2,
     image: Post2,
     excerpt:
-      "This is the fourth blog post. It shows how the layout adapts to different content lengths and image sizes. Sed ligula erat molestie cras morbi in in urna molestie tristique.",
+      "Construction and commissioning of cross-country pipelines for oil and gas transportation, and construction of oil and chemical storage tanks for efficient and safe operations. Full EPCC scope with one-point control.",
     fullHeight: false,
   },
   {
     id: 5,
-    title: "Fifth Blog Post",
-    author: "Bob Wilson",
-    date: "30 / Mar , 2017",
-    comments: 7,
+    title: "Fabrication and installation: vessels, LPG bullets, and process equipment",
+    author: "JES Team",
+    date: "05 / Mar , 2025",
+    comments: 5,
     image: Post1,
     excerpt:
-      "This is the fifth blog post. It will appear on the third page. Lorem ipsum dolor sit amet, in urna molestie tristique. Cong erment sed at facilisis lacinia aliquam fusce wisi.",
+      "Our fabrication and installation capabilities include process and pressure vessels, LPG bullets, separators, high-pressure cylinders, columns, and rectangular oil storage and transportation tanks. Manufacturing workshop in Sadiqabad supports timely delivery.",
     fullHeight: true,
   },
 ];
@@ -137,65 +137,57 @@ export default function BlogPage() {
             </article>
           ))}
 
-          {/* Pagination */}
-          <div className="flex items-center gap-2 mt-10">
-            <button
-              onClick={prevPage}
-              disabled={currentPage === 1}
-              className={`border px-3 py-1 text-sm font-roboto text-[15px] font-bold ${
-                currentPage === 1
-                  ? "bg-gray-300 cursor-not-allowed"
-                  : "bg-green hover:bg-green"
-              }`}
-            >
-              &lt;
-            </button>
-
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-              (number) => (
-                <button
-                  key={number}
-                  onClick={() => paginate(number)}
-                  className={`border px-3 py-1 text-sm font-roboto text-[15px] font-bold ${
-                    currentPage === number
-                      ? "bg-green"
-                      : "bg-green hover:bg-green"
-                  }`}
-                >
-                  {number.toString().padStart(2, "0")}
-                </button>
-              )
-            )}
-
-            <button
-              onClick={nextPage}
-              disabled={currentPage === totalPages}
-              className={`border px-3 py-1 text-sm font-roboto text-[15px] font-bold ${
-                currentPage === totalPages
-                  ? "bg-gray-300 cursor-not-allowed"
-                  : "bg-green hover:bg-green"
-              }`}
-            >
-              &gt;
-            </button>
-          </div>
-          {/* <div className="flex items-center gap-2 mt-10">
-            <button className="border px-3 py-1 text-sm bg-[#FFBC13] font-roboto text-[15px] font-bold">
-              &lt;
-            </button>
-            <button className="border px-3 py-1 text-sm bg-[#FFBC13] text-whit font-roboto text-[15px] font-bold">
-              01
-            </button>
-            <button className="border px-3 py-1 text-sm bg-[#FFBC13] font-roboto text-[15px] font-bold">
-              02
-            </button>
-            <button className="border px-3 py-1 text-sm bg-[#FFBC13] font-roboto text-[15px] font-bold">
-              03
-            </button>
-            <button className="border px-3 py-1 text-sm bg-[#FFBC13] font-roboto text-[15px] font-bold">
-              &gt;
-            </button>
-          </div> */}
+          <nav
+            className="flex flex-wrap items-center justify-center gap-2 mt-16 pt-10 border-t border-[#e8e8e8]"
+            aria-label="Blog pagination"
+          >
+            <span className="mr-2 text-[#6b6b6b] text-sm font-roboto hidden sm:inline">
+              Page {currentPage} of {totalPages}
+            </span>
+            <div className="flex items-center gap-1">
+              <button
+                onClick={prevPage}
+                disabled={currentPage === 1}
+                aria-label="Previous page"
+                className={`min-w-[44px] h-11 px-4 flex items-center justify-center rounded font-roboto text-sm font-semibold transition-colors ${
+                  currentPage === 1
+                    ? "bg-[#f0f0f0] text-[#9ca3af] cursor-not-allowed"
+                    : "bg-white text-[#333] border border-[#ddd] hover:border-green hover:text-green hover:bg-[#fafafa]"
+                }`}
+              >
+                Previous
+              </button>
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                (number) => (
+                  <button
+                    key={number}
+                    onClick={() => paginate(number)}
+                    aria-label={`Page ${number}`}
+                    aria-current={currentPage === number ? "page" : undefined}
+                    className={`min-w-[44px] h-11 flex items-center justify-center rounded font-roboto text-sm font-semibold transition-colors ${
+                      currentPage === number
+                        ? "bg-green text-white border border-green shadow-sm"
+                        : "bg-white text-[#555] border border-[#ddd] hover:border-green hover:text-green hover:bg-[#fafafa]"
+                    }`}
+                  >
+                    {number}
+                  </button>
+                )
+              )}
+              <button
+                onClick={nextPage}
+                disabled={currentPage === totalPages}
+                aria-label="Next page"
+                className={`min-w-[44px] h-11 px-4 flex items-center justify-center rounded font-roboto text-sm font-semibold transition-colors ${
+                  currentPage === totalPages
+                    ? "bg-[#f0f0f0] text-[#9ca3af] cursor-not-allowed"
+                    : "bg-white text-[#333] border border-[#ddd] hover:border-green hover:text-green hover:bg-[#fafafa]"
+                }`}
+              >
+                Next
+              </button>
+            </div>
+          </nav>
         </div>
         <aside className="space-y-10">
           <div className="">
@@ -212,15 +204,15 @@ export default function BlogPage() {
               POST CATEGORIES
             </h3>
             <ul className="space-y-3 text-[15px] tracking-[1px] font-roboto text-[#6f6f6f] ">
-              <li>Windows</li>
+              <li>EPCC Projects</li>
               <div className="w-full border-b border-[#e1e1e1]"></div>
-              <li>Laptop</li>
+              <li>Gas Plants</li>
               <div className="w-full border-b border-[#e1e1e1]"></div>
-              <li>Envato</li>
+              <li>Pipelines</li>
               <div className="w-full border-b border-[#e1e1e1]"></div>
-              <li>Website</li>
+              <li>Storage & Tanks</li>
               <div className="w-full border-b border-[#e1e1e1]"></div>
-              <li>Development</li>
+              <li>HSE & Quality</li>
               <div className="w-full border-b border-[#e1e1e1]"></div>
             </ul>
           </div>
@@ -230,27 +222,27 @@ export default function BlogPage() {
             </h3>
             <ul className="text-sm text-[#333333] space-y-3 font-roboto tracking-[2px] font-extralight">
               <li>
-                <strong>THIS IS LATEST PIC</strong>
+                <strong>EPCC AND INDUSTRIAL UPDATES</strong>
                 <br />
                 <span className="text-[#8b8b8b] text-[13px] font-normal tracking-normal">
-                  25th Dec 2015
+                  25th Feb 2025
                 </span>
               </li>
               <div className="w-full border-b border-[#e1e1e1] mt-7"></div>
 
               <li>
-                <strong>THIS IS VIDEO</strong>
+                <strong>GAS PLANTS AND PIPELINES</strong>
                 <br />
                 <span className="text-[#8b8b8b] text-[13px] font-normal tracking-normal">
-                  25th Dec 2015
+                  20th Feb 2025
                 </span>
               </li>
               <div className="w-full border-b border-[#e1e1e1] mt-7"></div>
               <li>
-                <strong>GRAPHIC DESIGN</strong>
+                <strong>QUALITY AND HSE AT JES</strong>
                 <br />
                 <span className="text-[#8b8b8b] text-[13px] font-normal tracking-normal">
-                  25th Dec 2015
+                  15th Feb 2025
                 </span>
               </li>
             </ul>
@@ -285,7 +277,7 @@ export default function BlogPage() {
             </h3>
 
             <div className="flex flex-wrap gap-2">
-              {["Install", "Design", "Video", "Branding", "Packaging"].map(
+              {["EPCC", "Gas Plants", "Pipelines", "HSE", "Construction"].map(
                 (tag) => (
                   <span
                     key={tag}

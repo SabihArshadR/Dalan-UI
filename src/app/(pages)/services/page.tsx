@@ -1,7 +1,6 @@
 import Facts from "@/components/Facts";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import Prices from "@/components/Prices";
 import Services from "@/components/Services";
 import React from "react";
 
@@ -29,7 +28,6 @@ const page = () => {
       </div>
       <div className="h-20 bg-[#FBFBFB]"></div>
       <Facts />
-      <Prices />
       <Footer />
     </div>
   );

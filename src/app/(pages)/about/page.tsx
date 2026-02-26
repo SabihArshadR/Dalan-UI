@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import TeamMember from "@/components/Team";
 import Welcome from "@/components/Welcome";
+import Organogram from "@/components/Organogram";
 import React from "react";
 
 const page = () => {
@@ -25,7 +26,8 @@ const page = () => {
       <div className="">
         <Welcome />
       </div>
-      <TeamMember />
+      <Organogram />
+      {/* <TeamMember /> */}
       <Footer />
     </div>
   );

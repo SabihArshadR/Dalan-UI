@@ -1,31 +1,38 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Image1 from "@/assets/client_1.jpg";
-import Image2 from "@/assets/client_2.jpg";
-import Image3 from "@/assets/client_3.jpg";
-import Image4 from "@/assets/client_4.jpg";
-import Image5 from "@/assets/client_5.jpg";
-import Avatar from "@/assets/tes1.jpg";
 
 const testimonials = [
   {
-    text: "Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue reformidans atomorum his id, pri te hinc expetenda. Est an mundi tollit iuvaret. An ius postulant reformidans. Vel an elit ludus fabellas, ex quando adipisci accommodare usuet verar noluisse eum diam.",
-    name: "JOHN WATSON",
-    position: "CEO At Facebook",
-    avatar: Avatar,
+    text: "JES delivered our gas processing facility on schedule with strict adherence to HSE and quality. Their one-point EPCC approach simplified coordination and reduced interface issues. A reliable partner for oil and gas projects.",
+    name: "EnerServe",
+    position: "Oil & Gas — Project Partner",
+    image: "/clients/Picture1.jpg",
   },
   {
-    text: "Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue reformidans atomorum his id, pri te hinc expetenda. Est an mundi tollit iuvaret. An ius postulant reformidans. Vel an elit ludus fabellas, ex quando adipisci accommodare usuet verar noluisse eum diam.",
-    name: "JANE SMITH",
-    position: "Marketing Director",
-    avatar: Avatar,
+    text: "From engineering through commissioning, the team demonstrated technical expertise and a strong commitment to safety. We would engage JES again for brownfield and greenfield industrial projects.",
+    name: "Upstream Operator",
+    position: "Energy Sector",
+    image: "/clients/Picture2.jpg",
   },
   {
-    text: "Lorem ipsum dolor sit amet, et verar noluisse eum, diam congue reformidans atomorum his id, pri te hinc expetenda. Est an mundi tollit iuvaret. An ius postulant reformidans. Vel an elit ludus fabellas, ex quando adipisci accommodare usuet verar noluisse eum diam.",
-    name: "MICHAEL JOHNSON",
-    position: "Project Manager",
-    avatar: Avatar,
+    text: "Their turnkey approach and dedicated project management made a real difference. Quality of fabrication and installation met international standards. Recommended for pipelines and storage tank projects.",
+    name: "EPC Client",
+    position: "Petrochemicals & Process",
+    image: "/clients/Picture3.jpg",
+  },
+  {
+    text: "Professional execution and clear communication throughout. JES met our schedule and HSEQ requirements on a complex site.",
+    name: "Gas Processing Client",
+    position: "Industrial Development",
+    image: "/clients/Picture4.png",
+  },
+  {
+    text: "Trusted partner for construction and commissioning. We value their safety culture and technical capability.",
+    name: "Infrastructure Partner",
+    position: "Oil & Gas",
+    image: "/clients/Picture5.jpg",
   },
 ];
 
@@ -39,18 +46,18 @@ export default function ClientTestimonial() {
       setTimeout(() => {
         setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
         setIsAnimating(false);
-      }, 500); // Half of the transition duration
+      }, 500);
     }, 5000);
 
     return () => clearInterval(timer);
   }, []);
 
   return (
-    <div className="lg:h-[676px] bg-[#FBFBFB]">
+    <div className="bg-[#FBFBFB]">
       <section className="w-full py-20">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <h2 className="text-[40px] font-bold tracking-[4px] text-blue font-montserrat">
-            CLIENT & <span className="text-green">TESTIMONIAL</span>
+            OUR CLIENTS & <span className="text-green">TESTIMONIALS</span>
           </h2>
           <div className="flex justify-center mt-4">
             <div className="h-0.5 w-[100px] bg-blue" />
@@ -59,14 +66,12 @@ export default function ClientTestimonial() {
             <div className="h-0.5 w-[40px] bg-green" />
           </div>
           <p className="text-[#6b6b6b] font-roboto text-sm max-w-[648px] mx-auto mt-5">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
-            lectus quis dui euismod con placerat massa nec elit egestas
-            efficitur.
+            Here’s what our clients say about working with JES.
           </p>
         </div>
 
-        <div className="lg:max-w-[1320px] lg:mx-auto lg:mt-16 grid lg:grid-cols-2 gap-6">
-          <div className="relative overflow-hidden h-full">
+        <div className="lg:max-w-[856px] mx-auto mt-16 px-4">
+          <div className="relative overflow-hidden">
             <div
               className={`transition-transform duration-500 ease-in-out ${
                 isAnimating
@@ -78,10 +83,10 @@ export default function ClientTestimonial() {
                 {testimonials[currentTestimonial].text}
               </p>
               <div className="flex items-center pt-[25px] pb-[40px] px-2 gap-4 bg-[#FBFBFB]">
-                <div className="rounded-full overflow-hidden">
+                <div className="overflow-hidden shrink-0 border border-[#e5e5e5] w-20 h-20 relative">
                   <Image
-                    src={testimonials[currentTestimonial].avatar}
-                    alt="Profile"
+                    src={testimonials[currentTestimonial].image}
+                    alt={testimonials[currentTestimonial].name}
                     width={80}
                     height={80}
                     className="object-cover w-20 h-20"
@@ -95,26 +100,11 @@ export default function ClientTestimonial() {
                     {testimonials[currentTestimonial].position}
                   </p>
                 </div>
-                <span className="text-blue text-[70px] ml-auto mr-24">
+                <span className="text-blue text-[70px] ml-auto">
                   &#10078;
                 </span>
               </div>
             </div>
-          </div>
-          <div className="grid grid-cols-3 gap-3">
-            {[Image1, Image2, Image3, Image4, Image5, Image3].map((logo, i) => (
-              <div
-                key={i}
-                className="flex items-center justify-center bg-[#f2f2f2] shadow-sm lg:w-[202px] lg:h-[145px]"
-              >
-                <Image
-                  src={logo}
-                  alt={`Client ${i + 1}`}
-                  width={202}
-                  height={145}
-                />
-              </div>
-            ))}
           </div>
         </div>
       </section>

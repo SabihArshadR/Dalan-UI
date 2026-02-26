@@ -12,7 +12,7 @@ const Facts = () => {
         <div className="flex justify-end lg:mr-80 pt-20">
           <div className="text-white text-center">
             <h2 className="text-[40px] text-blue font-montserrat font-bold mb-2 tracking-widest">
-              AWESOME <span className="text-green">FACTS</span>
+              JES <span className="text-green">IN NUMBERS</span>
             </h2>
           </div>
         </div>
@@ -23,27 +23,27 @@ const Facts = () => {
               <div className="flex lg:justify-end justify-center">
                 <GoGift className="w-[40px] h-[40px]" />
               </div>
-              <p className="text-[40px] font-montserrat lg:text-right text-center tracking-[5px]">197</p>
+              <p className="text-[40px] font-montserrat lg:text-right text-center tracking-[5px]">15+</p>
               <p className="text-sm font-roboto tracking-[2px] text-center">
-                PROJECTS DONE
+                YEARS IN INDUSTRY
               </p>
             </div>
             <div>
               <div className="flex lg:justify-end justify-center">
                 <FaRegLightbulb className="w-[40px] h-[40px]" />
               </div>
-              <p className="text-[40px] font-montserrat lg:text-right text-center tracking-[5px]">275</p>
+              <p className="text-[40px] font-montserrat lg:text-right text-center tracking-[5px]">100+</p>
               <p className="text-sm font-roboto tracking-[2px] text-center">
-                PROBLEMS SOLVED
+                PROJECTS DELIVERED
               </p>
             </div>
             <div>
               <div className="flex lg:justify-end justify-center">
                 <FaRegHeart className="w-[40px] h-[40px]" />
               </div>
-              <p className="text-[40px] font-montserrat tracking-[5px] lg:text-right text-center">374</p>
+              <p className="text-[40px] font-montserrat tracking-[5px] lg:text-right text-center">50+</p>
               <p className="text-sm font-roboto tracking-[2px] text-center">
-                CLIENTS HELPED
+                CLIENTS PARTNERED
               </p>
             </div>
           </div>

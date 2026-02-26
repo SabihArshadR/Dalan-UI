@@ -1,15 +1,12 @@
 "use client";
-import Image from "next/image";
-import Image1 from "@/assets/about.jpg";
 import { useEffect, useState } from "react";
-import Welcome from "./Welcome";
 
 export default function Hero() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [nextSlide, setNextSlide] = useState(1);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [animateText, setAnimateText] = useState(false);
-  const slides = ["/image1.jpeg", "/image11.jpeg"];
+  const slides = ["/slider1.jpg", "/jes/image5.jpeg", "/image1.jpeg"];
   const totalSlides = slides.length;
 
   useEffect(() => {
@@ -99,16 +96,14 @@ export default function Hero() {
           }}
         >
           <h1 className="text-[24px] font-bold font-roboto tracking-widest">
-            DALAN CONSTRUCTION
+            JES — OIL & GAS EPCC
           </h1>
           <h1 className="text-[44px] font-bold font-montserrat">
-            <span className="text-blue">BUILD</span>{" "}
-            <span className="text-green">EVERYTHING</span>
+            <span className="text-blue">ENGINEERING</span>{" "}
+            <span className="text-green">EXCELLENCE</span>
           </h1>
           <p className="text-sm max-w-[636px] font-roboto">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonmy ni euism laoreet dolore magna aliquam erat volutpat
-            consectetuer adipiscing elit.
+            Premier contractor in Pakistan and Qatar delivering full EPCC services across oil, gas, and chemical process industries. Turnkey solutions with one-point control for civil, mechanical, and E&I since 2009.
           </p>
           <div className="flex gap-5 mt-10">
             <button className="px-8 py-3 bg-blue hover:bg-transparent border border-blue rounded shadow cursor-pointer font-roboto text-sm">
@@ -120,19 +115,6 @@ export default function Hero() {
           </div>
         </div>
       </section>
-      <div>
-        <section className="bg-green">
-          <div className="h-[158px] flex justify-between flex-row items-center lg:ml-[300px] lg:mr-[520px] mx-5 font-montserrat">
-            <h2 className="text-[#333333] tracking-[4px] font-e text-[25px] uppercase">
-              WE’RE READY TO WORK WITH YOU
-            </h2>
-            <button className=" bg-white text-[#333333] px-10 py-3 text-[16px] tracking-wider font-bold hover:bg-blue cursor-pointer hover:text-white transition">
-              GET A QUOTE
-            </button>
-          </div>
-        </section>
-      </div>
-      <Welcome />
     </div>
   );
 }

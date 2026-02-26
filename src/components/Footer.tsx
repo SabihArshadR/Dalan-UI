@@ -2,9 +2,6 @@
 
 import Image from "next/image";
 import {
-  FaFacebookF,
-  FaTwitter,
-  FaBehance,
   FaPhoneAlt,
   FaEnvelope,
   FaMapMarkerAlt,
@@ -22,21 +19,9 @@ export default function Footer() {
               <Image src={Logo} alt="logo" className="w-[150px] h-[150px] mt-3 object-contain translate-y-[-27px] translate-x-[-50px]"/>
             </div>
           </div>
-          <div className="flex gap-5">
-            <div className="flex flex-col space-y-3 text-[#BABABA] text-lg mt-6">
-              <FaFacebookF className="hover:text-white cursor-pointer w-[8px] h-[15px]" />
-              <FaTwitter className="hover:text-white cursor-pointer w-[14px] h-[15px]" />
-              <FaBehance className="hover:text-white cursor-pointer w-[17px] h-[15px]" />
-            </div>
-            <div>
-              <p className="text-[#BABABA] max-w-[511px] text-sm leading-6 mt-5">
-                Loren ipsum dolor consectetur adipiscing elit sed do eiusmod
-                tempor incididunt know you labore et dolore magna aliqua
-                consectetur adipiscing. Loren ipsum dolor consectetur adipiscing
-                elit sed do eiusmod tempor incididunt.
-              </p>
-            </div>
-          </div>
+          <p className="text-[#BABABA] max-w-[511px] text-sm leading-6 mt-5">
+            JES is a premier EPCC contractor in Pakistan and Qatar for oil, gas, and chemical process industries. We deliver turnkey solutions with one-point control for civil, mechanical, and E&I since 2009.
+          </p>
         </div>
         <div className="lg:flex lg:ml-14 pt-10">
           <div>
@@ -46,16 +31,16 @@ export default function Footer() {
 
             <ul className="space-y-4 text-[#BABABA] text-sm">
               <li>
-                Loren ipsum dolor consectetur elito
+                EPCC and industrial project updates
                 <div className="border-b border-dashed border-[#454545] mt-2" />
               </li>
 
               <li>
-                Loren ipsum dolor consectetur elito
+                Gas plants and pipeline projects
                 <div className="border-b border-dashed border-[#454545] mt-2" />
               </li>
 
-              <li>Loren ipsum dolor consectetur elito</li>
+              <li>Quality and HSE at JES</li>
             </ul>
           </div>
           <div className="lg:ml-14">
@@ -66,22 +51,22 @@ export default function Footer() {
             <ul className="space-y-4 text-[#BABABA] text-[15px]">
               <li className="flex items-center space-x-3">
                 <FaPhoneAlt className="" />
-                <span>Call Us 0 (245) 378-6748</span>
+                <span>Contact JES for enquiries</span>
               </li>
 
               <li className="flex items-center space-x-3">
                 <FaEnvelope className="" />
-                <span>info@mail.com</span>
+                <span>info@jes.com.pk</span>
               </li>
 
               <li className="flex items-center space-x-3">
                 <FaMapMarkerAlt className="" />
-                <span>California, USA</span>
+                <span>Karachi, Pakistan — Lahore, Islamabad, Sadiqabad</span>
               </li>
 
               <li className="flex items-center space-x-3">
                 <FaClock className="" />
-                <span>Monday - Friday 9am - 6 pm</span>
+                <span>Monday - Friday 8:00 - 16:00</span>
               </li>
             </ul>
           </div>
@@ -92,7 +77,7 @@ export default function Footer() {
 
       <div className="max-w-[1320px] px-6 mt-8 flex items-center justify-between text-sm">
         <p className="text-[#BABABA] text-[13px]">
-          {new Date().getFullYear()} © Copyright Dalan. All rights reserved.
+          {new Date().getFullYear()} © Copyright JES. All rights reserved.
         </p>
 
         <a

@@ -32,9 +32,7 @@ export default function Contact() {
           </div>
 
           <p className="text-[#6b6b6b] text-sm font-roboto lg:max-w-[750px] mx-auto mt-6 leading-6">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
-            lectus quis dui euismod con placerat massa nec elit egestas
-            efficitur.
+            Get in touch with JES for EPCC and industrial project enquiries. We are headquartered in Karachi with offices in Lahore and Islamabad.
           </p>
 
           <form className="mt-12 text-left">

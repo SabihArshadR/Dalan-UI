@@ -8,39 +8,39 @@ import { FaReact } from "react-icons/fa";
 export default function Services() {
   const services = [
     {
-      title: "FLOORS & ROOFS",
+      title: "PROCUREMENT & ERECTION",
       description:
-        "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
+        "Erection and installation of machinery, pipelines, industrial plants, gas plants, pumping and compressor stations involving civil, mechanical, piping, E&I, and commissioning works.",
       icon: <FiMonitor className="w-[66px] h-[64px]" />,
     },
     {
-      title: "ROOMS & HALLS",
+      title: "CONSTRUCTION SERVICES",
       description:
-        "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
+        "Industrial development in oil and gas fields from wellheads to hydrocarbon sales points. Construction and commissioning of central gas processing facilities and fertilizer plants.",
       icon: <FaRegLightbulb className="w-[66px] h-[64px]" />,
     },
     {
-      title: "BASEMENTS",
+      title: "STORAGE TANKS",
       description:
-        "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
+        "Construction of oil and chemical storage tanks for efficient and safe storage. Design and build to meet international standards for hydrocarbon and chemical handling.",
       icon: <LuClock3 className="w-[66px] h-[64px]" />,
     },
     {
-      title: "CONSULTING",
+      title: "CROSS-COUNTRY PIPELINES",
       description:
-        "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
+        "Construction and commissioning of cross-country pipelines for oil and gas transportation. Full EPCC scope from route to sales point.",
       icon: <BsCamera className="w-[66px] h-[64px]" />,
     },
     {
-      title: "MODERN DESIGN",
+      title: "FABRICATION & INSTALLATION",
       description:
-        "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
+        "Fabrication and installation of process and pressure vessels, LPG bullets, separators, high-pressure cylinders, columns, and rectangular oil storage and transportation tanks.",
       icon: <CiLaptop className="w-[66px] h-[64px]" />,
     },
     {
-      title: "24 SERVICE",
+      title: "INDUSTRIAL BUILDINGS",
       description:
-        "Lorem ipsum dolor sit consec sit tetur adipiscing elit sed do eiusmod tempo incididunt ut labore et doloreeiusmod tempor incididunt",
+        "Construction of industrial buildings, central control rooms, MCC rooms, battery rooms, and onsite camps based on solid masonry or porta cabin solutions.",
       icon: <FaReact className="w-[66px] h-[64px]" />,
     },
   ];
@@ -59,8 +59,7 @@ export default function Services() {
           <div className="h-0.5 w-[40px] bg-green" />
         </div>
         <p className="text-[#6b6b6b] max-w-[648px] mx-auto mb-16 mt-5 text-sm font-roboto leading-6">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Phasellus id
-          lectus quis dui euismod con placerat massa nec elit egestas efficitur.
+          JES delivers turnkey EPCC solutions with one-point control for civil, mechanical, and E&I. We combine technical excellence with strict quality and HSE standards.
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 font-roboto ">
