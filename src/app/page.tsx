@@ -4,6 +4,7 @@ import AboutUs from "@/components/AboutUs";
 import CEOVision from "@/components/CEOVision";
 import Services from "@/components/Services";
 import Projects from "@/components/Projects";
+import ProjectsDelivered from "@/components/ProjectsDelivered";
 import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import ClientTestimonial from "@/components/ClientTestimonial";
@@ -23,6 +24,7 @@ export default function Home() {
         <Facts />
         <HSEPerformance />
         <Projects />
+        <ProjectsDelivered />
         <WhyChoose/>
         <Gallery />
         <ClientTestimonial />
